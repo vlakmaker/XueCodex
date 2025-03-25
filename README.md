@@ -12,10 +12,10 @@ The AICodex covers core AI domains with concise, readable markdown pages that sy
 
 | Topic | Description |
 |-------|-------------|
-| [AI Fundamentals](docs/topics/AI_Fundamentals) | Core concepts, types of ML, training, evaluation, and ethics. |
-| [AI Engineering](docs/topics/AI_Engineering) | Running LLMs locally, fine-tuning, APIs, infrastructure, deployment. |
-| [AI Product Management](docs/topics/AI_Product_Management) | How to manage and build products powered by AI. |
-| [AI Storytelling](docs/topics/AI_Storytelling) | Using AI for games, narrative design, and interactive storytelling. |
+| [AI Fundamentals](docs/topics/ai-fundamentals/README.md) | Core concepts, types of ML, training, evaluation, and ethics. |
+| [AI Engineering](docs/topics/ai-engineering/README.md) | Running LLMs locally, fine-tuning, APIs, infrastructure, deployment. |
+| [AI Product Management](docs/topics/ai-product-management/README.md) | How to manage and build products powered by AI. |
+| [AI Storytelling](docs/topics/ai-storytelling/README.md) | Using AI for games, narrative design, and interactive storytelling. |
 
 ---
 
