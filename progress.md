@@ -79,13 +79,14 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - ✅ Organized notebooks under `playground/practice`, added CSVs under `playground/resources`.
 - ✅ Added YAML frontmatter to topic Markdown files.
 - ✅ Refined folder structure: topics split from playground, theory vs practice split added.
+- ✅ 🧠 DeepLearning.AI - Python for AI Developers. Completed: Lessons 1–6. 📝 Why I like it: Practical, not bloated, explains concepts clearly and at a nice pace.
 
 ---
 
 ## 📌 In Progress
 
 - Continuing **Week 2** of the [DeepLearning.AI course](https://www.coursera.org/learn/neural-networks-deep-learning).
-- Exploring beginner Python for AI course in parallel.
+- Continue with Lessons 7–10 this week
 - Expanding theory and practice sections with visual guides and more notebooks.
 - Planning Docusaurus integration for publishing.
 
