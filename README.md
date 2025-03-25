@@ -12,10 +12,10 @@ The AICodex covers core AI domains with concise, readable markdown pages that sy
 
 | Topic | Description |
 |-------|-------------|
-| [AI Fundamentals](docs/topics/ai-fundamentals/README.md) | Core concepts, types of ML, training, evaluation, and ethics. |
-| [AI Engineering](docs/topics/ai-engineering/README.md) | Running LLMs locally, fine-tuning, APIs, infrastructure, deployment. |
-| [AI Product Management](docs/topics/ai-product-management/README.md) | How to manage and build products powered by AI. |
-| [AI Storytelling](docs/topics/ai-storytelling/README.md) | Using AI for games, narrative design, and interactive storytelling. |
+| [AI Fundamentals](topics/ai-fundamentals/README.md) | Core concepts, types of ML, training, evaluation, and ethics. |
+| [AI Engineering](topics/ai-engineering/README.md) | Running LLMs locally, fine-tuning, APIs, infrastructure, deployment. |
+| [AI Product Management](topics/ai-product-management/README.md) | How to manage and build products powered by AI. |
+| [AI Storytelling](topics/ai-storytelling/README.md) | Using AI for games, narrative design, and interactive storytelling. |
 
 ---
 
@@ -24,7 +24,7 @@ The AICodex covers core AI domains with concise, readable markdown pages that sy
 Instead of organizing notes by course or book, **topics are the primary structure**. That means when multiple sources explain a concept (like "overfitting"), they all contribute to **one clear page**. This makes the Codex easier to search, maintain, and expand over time.
 
 ---
-
+S
 ## 🛠️ Local Setup
 
 To view and edit the Codex locally:
