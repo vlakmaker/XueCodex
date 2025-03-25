@@ -42,7 +42,6 @@ AICodex/
 ├── intro/
 ├── img/
 └── README.md
-S
 
 ---
 
