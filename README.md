@@ -24,7 +24,25 @@ The content is structured by **topics**, not books or courses, to ensure that co
 
 Each concept or notebook contains a **YAML frontmatter** block so that it can easily be parsed and published to a Docusaurus knowledge site later.
 
-AICodex/ │ ├── ai-fundamentals/ # Broad AI topics, history, ethics, limitations │ ├── machine-learning/ # Traditional ML algorithms, workflows, metrics │ ├── deep-learning/ # Neural networks, CNNs, optimizers, backprop │ └── playground/ # Experiments, mini-projects, datasets, notebooks ├── theory/ # Visual explainers and deep dives ├── practice/ # Hands-on Jupyter notebooks └── additional-resources/ # CSVs, helper files, datasets
+AICodex/
+│
+├── playground/
+│   ├── theory/
+│   ├── practice/
+│   └── resources/
+│
+├── topics/
+│   ├── ai-fundamentals/
+│   ├── machine-learning/
+│   ├── deep-learning/
+│   ├── ai-product-management/
+│   ├── ai-engineering/
+│   └── ai-storytelling/
+│
+├── intro/
+├── img/
+└── README.md
+S
 
 ---
 
