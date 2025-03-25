@@ -24,24 +24,6 @@ The content is structured by **topics**, not books or courses, to ensure that co
 
 Each concept or notebook contains a **YAML frontmatter** block so that it can easily be parsed and published to a Docusaurus knowledge site later.
 
-AICodex/
-│
-├── playground/
-│   ├── theory/
-│   ├── practice/
-│   └── resources/
-│
-├── topics/
-│   ├── ai-fundamentals/
-│   ├── machine-learning/
-│   ├── deep-learning/
-│   ├── ai-product-management/
-│   ├── ai-engineering/
-│   └── ai-storytelling/
-│
-├── intro/
-├── img/
-└── README.md
 
 ---
 
