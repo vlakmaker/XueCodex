@@ -1,3 +1,9 @@
+---
+id: logistic-regression
+title: Logistic Regression
+tags: [machine-learning, classification, supervised-learning]
+---
+
 # Logistic Regression in Machine Learning and Deep Learning
 
 ## What is Logistic Regression?

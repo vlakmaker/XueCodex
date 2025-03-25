@@ -1,3 +1,9 @@
+---
+id: machine-learning-limitations
+title: Machine Learning Limitation
+tags: [machine-learning, limitations, hallucination]
+---
+
 # Machine Learning Limitations
 
 ## Understanding Machine Learning Limitations, Feedback Loops, and Classification vs. Regression

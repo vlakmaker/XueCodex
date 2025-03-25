@@ -1,3 +1,9 @@
+---
+id: logistic-regression-cost-function
+title: Logistic Regression Cost Function
+tags: [machine-learning, classification, supervised-learning]
+---
+
 # Logistic Regression Cost Function
 
 ## What is this about?

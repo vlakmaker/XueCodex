@@ -1,3 +1,9 @@
+---
+id: binary-classification
+title: Binary Classification and Associated Concepts
+tags: [machine-learning, classification, confusion matrix]
+---
+
 # Binary Classification and Associated Concepts
 
 ## Binary Classification

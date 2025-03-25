@@ -1,3 +1,9 @@
+---
+id: weights
+title: weights
+tags: [machine-learning, deep learning, weights]
+---
+
 # Weights
 
 In machine learning, **weights** are crucial parameters that are learned during the training of a model, such as a neural network. They help the model make predictions by assigning importance to the inputs it receives. Let's break down the concept further:

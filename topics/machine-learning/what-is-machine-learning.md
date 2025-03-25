@@ -1,3 +1,9 @@
+---
+id: what-is-machine-learning
+title: What is Machine Learning
+tags: [machine-learning, keyconcepts, types of learning]
+---
+
 # What is Machine Learning
 
 Machine learning is a field of artificial intelligence (AI) that focuses on creating algorithms and models that enable computers to learn from and make predictions or decisions based on data, without being explicitly programmed for every specific task. The goal is to allow systems to automatically improve their performance as they are exposed to more data over time.
