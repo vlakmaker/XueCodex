@@ -81,6 +81,21 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - ✅ Refined folder structure: topics split from playground, theory vs practice split added.
 - ✅ 🧠 DeepLearning.AI - Python for AI Developers. Completed: Lessons 1–6. 📝 Why I like it: Practical, not bloated, explains concepts clearly and at a nice pace.
 
+### Thursday
+🎉 After weeks of iteration, testing, and Docker wrangling, **MythosQuest** is officially live on my Oracle Cloud instance — now powered by the **CosmosRP API** instead of local models.
+
+### 🔄 Key Changes Today
+- 🚀 Replaced self-hosted Mistral with the faster CosmosRP API to improve response speed and reduce memory usage
+- 🔧 Simplified the Flask app (`ai_dm.py`) to remove login, memory, and RAG features for faster iteration
+- 🔑 Switched to `.env`-based API key loading and verified that it works both locally and on the Oracle server
+- 🐳 Verified that the Docker container runs the new version correctly
+- 🔐 Temporarily secured the app by rotating the API key to prevent external misuse
+
+### 🌐 Deployment Status
+- ✅ Live at `localhost:5000` (and Oracle IP)
+- ✅ cURL and browser responses working as expected
+- ⏳ Login system planned for tomorrow to secure usage and prep for multi-user support
+
 ---
 
 ## 📌 In Progress
