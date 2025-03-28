@@ -96,6 +96,14 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - ✅ cURL and browser responses working as expected
 - ⏳ Login system planned for tomorrow to secure usage and prep for multi-user support
 
+### 🧙 2025-03-28 — MythosQuest MVP: Login & Streaming
+
+- Built full user **registration/login/logout** system with hashed passwords
+- Implemented **Flask sessions** to protect access to gameplay
+- Fixed **streaming duplication bug** on the frontend (chunk handling)
+- Streaming now yields proper readable paragraphs, not individual characters
+- Reached a solid **MVP** milestone: MythosQuest is now testable & playable
+
 ---
 
 ## 📌 In Progress
