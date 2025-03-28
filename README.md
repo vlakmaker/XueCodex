@@ -1,68 +1,69 @@
-# 🤖 AICodex
+# 🧠 XuéCodex
 
-Welcome to **AICodex**, your open, personal knowledge base for mastering **AI**, **Machine Learning**, **Deep Learning**, and more — one concept, experiment, and notebook at a time.
+*The Living Book of Learning* — a personal chronicle of my journey through artificial intelligence, experimentation, and applied creativity.
 
-This project is built for *hands-on learners* who like to tinker, build, and understand by doing. It combines clear theory, working code, and useful resources — organized in a GitHub-friendly way.
+This codex contains daily reflections, project logs, skill assessments, and concept deep dives as I explore the evolving landscape of AI — not just as a user, but as a builder, learner, and strategist.
+
+“学 (xué)” means *to study, to learn*. It reflects my commitment to continuous growth through hands-on experimentation and cross-disciplinary curiosity.
 
 ---
 
 ## 🧭 Purpose
 
-AICodex helps you:
+XuéCodex is your evolving companion to:
 
-- Learn **fundamental AI concepts** step by step.
-- Build **hands-on projects** to reinforce understanding.
-- Create your own **AI notebooks**, resources, and insights.
-- Stay organized while exploring courses, books, and ideas.
+- 📘 Learn fundamental AI concepts step by step  
+- 🔧 Build hands-on projects to reinforce understanding  
+- 🧪 Explore your own ideas, prompts, and experiments  
+- 🧹 Stay organized while diving into courses, books, and tech
 
 ---
 
 ## 🗂️ Structure
 
-The content is structured by **topics**, not books or courses, to ensure that concepts are **reusable, connected, and scalable**.
-
-
-Each concept or notebook contains a **YAML frontmatter** block so that it can easily be parsed and published to a Docusaurus knowledge site later.
-
+The content is structured by **topic**, not by course or book, so you can reuse and remix ideas across different areas.  
+Each `.md` or `.ipynb` file includes YAML frontmatter for easy parsing and publishing to a future Docusaurus site.
 
 ---
 
 ## ✨ Features
 
-- ✅ Markdown-first, portable structure
-- ✅ Topics organized for cross-referencing
-- ✅ Built alongside courses like [DeepLearning.AI](https://www.coursera.org/learn/neural-networks-deep-learning)
-- ✅ Fully open-source and extensible
-- ✅ Compatible with Jupyter, GitHub Pages, or Docusaurus
+✅ Markdown-first, portable structure  
+✅ Concepts organized for cross-referencing  
+✅ Built alongside courses like DeepLearning.AI  
+✅ Compatible with Jupyter, GitHub Pages, or Docusaurus  
+✅ 100% open-source and extensible  
 
 ---
 
 ## 📚 How to Use
 
-1. Browse the folders based on what you're learning (AI fundamentals, ML, DL).
-2. Open `.md` or `.ipynb` files in VS Code or Jupyter/Colab.
-3. Learn, remix, and experiment!
-4. Add your own notes and experiments using the folder conventions.
+1. Browse folders by topic (AI fundamentals, ML, DL, Prompt Engineering…)  
+2. Open `.md` or `.ipynb` files in VS Code, Jupyter, or Colab  
+3. Remix and experiment freely  
+4. Add your own notes using the same folder & frontmatter style
 
 ---
 
 ## 🛠️ Coming Soon
 
-- Interactive documentation site powered by Docusaurus
-- More example notebooks and mini-projects
-- Visual mind maps and cheat sheets
+- 📘 Interactive site (Docusaurus)
+- 📊 Visual mind maps and cheat sheets
+- 🤖 Prompt engineering playgrounds
+- 🧩 More example notebooks and mini-projects
 
 ---
 
 ## 🧠 Author
 
-Built by [vlakmaker](https://github.com/vlakmaker) — powered by curiosity, naps, and neural nets.
+Built by **vlakmaker** — powered by curiosity, storytelling, naps, and neural nets.  
+This project is part of an ongoing journey into creative, experimental, and human-centered AI.
 
-> “Learn by building, understand by breaking things, grow by sharing.”
+> “Learn by building. Understand by breaking things. Grow by sharing.”
 
 ---
 
 ## 📬 Contribute
 
-Ideas? Feedback? Open an issue or reach out!
-
+Questions, ideas, feedback?  
+Open an issue or reach out — your spark might light the next trail in the Codex.
