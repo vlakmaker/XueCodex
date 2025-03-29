@@ -27,7 +27,7 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 | Logistic Regression Mini-Lab  | Hands-on  | ✅ Done   | +3 Coding Intuition |
 | Spam Detector Classifier      | Project   | ✅ Done   | +4 Data Alchemy     |
 | Pixel Art Avatar              | Creative  | ✅ Done   | +5 Identity Boost   |
-| AI Notebook Refactor          | Practice  | 🚧 In Progress | +2 Organizational Wisdom |
+| AI Notebook Refactor          | Practice  | ✅ Done | +2 Organizational Wisdom |
 | AI Progress Tracker           | Meta      | ✅ Done   | +1 Self-Awareness XP |
 
 ---
@@ -103,6 +103,22 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - Fixed **streaming duplication bug** on the frontend (chunk handling)
 - Streaming now yields proper readable paragraphs, not individual characters
 - Reached a solid **MVP** milestone: MythosQuest is now testable & playable
+
+## 🧠 March 30, 2025 — Weekend Math Warrior
+
+- ✅ Finished all Week 2 videos of the DeepLearning.AI course  
+- ✅ Successfully understood computation graphs, forward & backward propagation  
+- ✅ Explored vectorization deeply and reviewed multiple examples  
+- ✅ Understood broadcasting with confidence and added a Broadcasting KI to the XueCodex  
+- ✅ Planned future labs and confirmed understanding of MNIST 0 vs 1 classifier  
+- 💬 Reflected on learning style: prefers code to abstract math, enjoys intuition-first learning  
+- 🌟 Key insight: I don’t need to master formulas to understand what’s happening  
+- 🛏️ Going to sleep happy — I studied math on a weekend and it actually felt empowering
+
+Next up:  
+- Gradient descent visualization lab  
+- MNIST binary classification with logistic regression  
+- Maybe a fun Codex summary of “math without fear” 🔧
 
 ---
 
