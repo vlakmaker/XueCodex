@@ -26,11 +26,16 @@ jobs:
         run: npm run build
         working-directory: ./site
 
-      - name: 🚀 Deploy to gh-pages
+      - name: Deploy to gh-pages 🚀
         run: |
           cd ./site
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          GIT_TERMINAL_PROMPT=0 npx docusaurus deploy
+          # Set user only for the commit, not for authentication
+          git config --global user.name "github-actions[bot]" # Or your preferred bot name
+          git config --global user.email "github-actions[bot]@users.noreply.github.com" # Or your preferred bot email
+          npx docusaurus deploy
         env:
+          # Add GIT_USER back to satisfy the docusaurus deploy script check
+          GIT_USER: github-actions[bot] 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional but recommended: Prevent credential helper conflicts
+          GIT_TERMINAL_PROMPT: 0 
