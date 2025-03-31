@@ -7,7 +7,7 @@ const config = {
   tagline: 'Hands-on AI Knowledge Codex',
   favicon: 'img/favicon.ico',
 
-  url: 'https://bittygpt.com',
+  url: 'https://vlakmaker.github.io',
   baseUrl: '/',
 
   organizationName: 'vlakmaker', // Your GitHub username
