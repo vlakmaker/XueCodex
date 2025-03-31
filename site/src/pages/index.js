@@ -77,7 +77,7 @@ export default function Home() {
         <section style={{ padding: '2rem', textAlign: 'center', backgroundColor: '#f5f6fa' }}>
           <h2>🤖 Who is BittyGPT?</h2>
           <p style={{ maxWidth: 700, margin: '0 auto' }}>
-            BittyGPT is Vera's AI sidekick — a curious little brain that helps write, build, and brainstorm your way through the learning journey. Trained on love, logic, and large language models, Bitty helps you stay motivated and make sense of the chaos.
+            BittyGPT is Vera's AI sidekick — a curious little brain that helps write, build, and brainstorm me way through my learning journey. Trained on love, logic, and large language models, Bitty helps with staying motivated and make sense of the chaos.
           </p>
           <p>
             Visit <a href="https://bittygpt.com" target="_blank" rel="noopener noreferrer">bittygpt.com</a> or <a href="https://xuecodex.tech" target="_blank" rel="noopener noreferrer">xuecodex.tech</a> to follow along or contribute.
