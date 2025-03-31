@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://vlakmaker.github.io',
-  baseUrl: '/',
+  baseUrl: '/XueCodex',
 
   organizationName: 'vlakmaker', // Your GitHub username
   projectName: 'XueCodex',       // Your repo name

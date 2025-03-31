@@ -2,16 +2,10 @@
   "name": "xuecodex",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+  "homepage": "https://vlakmaker.github.io/XueCodex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlakmaker/XueCodex"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
