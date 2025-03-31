@@ -7,8 +7,9 @@ const config = {
   tagline: 'Hands-on AI Knowledge Codex',
   favicon: 'img/favicon.ico',
 
-  url: 'https://vlakmaker.github.io',
+  url: 'https://xuecodex.tech',
   baseUrl: '/',
+  trailingSlash: false, // or true, but just make it explicit
 
   organizationName: 'vlakmaker',
   projectName: 'XueCodex',
@@ -16,6 +17,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
 
   i18n: {
     defaultLocale: 'en',
