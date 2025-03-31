@@ -4,7 +4,7 @@ This document tracks my day-to-day progress while building the **AICodex** knowl
 
 # 🌟 Vera's AI Learning Journey — Progress Log
 
-![Vera - The AI Alchemist](/docs/img/Vera_AI_Profile_Card.png)
+![Vera's AI Learning Journey – Progress Log](/img/Vera_AI_Profile_Card.png)
 
 Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicling the hands-on adventures, challenges, and breakthroughs of an Alchemist on a mission to master AI.
 
