@@ -8,34 +8,34 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📥 Checkout
-        uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4 # Use v4 for latest features/fixes
 
-      - name: ⚙️ Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js 🧠
+        uses: actions/setup-node@v4 # Use v4
         with:
           node-version: 18
+          cache: 'npm' # Enable npm caching
+          cache-dependency-path: site/package-lock.json # Specify lock file location
 
-      - name: 📦 Install Dependencies
+      - name: Install Dependencies 📦
         run: npm install
         working-directory: ./site
 
-      - name: 🏗️ Build Docusaurus Site
+      - name: Build Docusaurus Site 🏗️
         run: npm run build
         working-directory: ./site
 
-      - name: Deploy to gh-pages 🚀
-        run: |
-          cd ./site
-          # Set user only for the commit, not for authentication
-          git config --global user.name "github-actions[bot]" # Or your preferred bot name
-          git config --global user.email "github-actions[bot]@users.noreply.github.com" # Or your preferred bot email
-          npx docusaurus deploy
-        env:
-          # Add GIT_USER back to satisfy the docusaurus deploy script check
-          GIT_USER: github-actions[bot] 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Optional but recommended: Prevent credential helper conflicts
-          GIT_TERMINAL_PROMPT: 0 
+      # --- NEW DEPLOY STEP ---
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v4 # Use the dedicated action v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # This is the directory Docusaurus builds to within the 'site' folder
+          publish_dir: ./site/build 
+          # Optional: Configure commit user
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          # Optional: commit message
+          commit_message: ${{ github.event.head_commit.message }} # Use the commit message that triggered the workflow
