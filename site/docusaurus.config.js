@@ -7,8 +7,8 @@ const config = {
   tagline: 'Hands-on AI Knowledge Codex',
   favicon: 'img/favicon.ico',
 
-  url: 'https://bittygpt.com',
-  baseUrl: '/',
+  url: 'https://vlakmaker.github.io',
+  baseUrl: '/XueCodex/',
 
   organizationName: 'vlakmaker', // Your GitHub username
   projectName: 'XueCodex',       // Your repo name
