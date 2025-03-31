@@ -1,4 +1,4 @@
-// @ts-check
+// docusaurus.config.js
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -8,10 +8,11 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://vlakmaker.github.io',
-  baseUrl: '/XueCodex',
+  baseUrl: '/XueCodex/',
 
-  organizationName: 'vlakmaker', // Your GitHub username
-  projectName: 'XueCodex',       // Your repo name
+  organizationName: 'vlakmaker',
+  projectName: 'XueCodex',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -31,7 +32,7 @@ const config = {
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
         },
-        blog: false, // disables blog
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

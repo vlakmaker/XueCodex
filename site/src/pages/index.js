@@ -1,5 +1,7 @@
+// src/pages/index.js
 import React from 'react';
 import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home() {
   return (
@@ -32,7 +34,7 @@ export default function Home() {
               }}
             >
               <img
-                src="/img/logo.png"
+                src={useBaseUrl('img/logo.png')}
                 alt="XueCodex Logo"
                 style={{ maxHeight: '80px' }}
               />
@@ -54,7 +56,7 @@ export default function Home() {
             <div style={{ marginTop: '1rem' }}>
               <a
                 className="button button--secondary button--lg"
-                href="/docs/intro"
+                href={useBaseUrl('/docs/intro')}
                 style={{ fontWeight: 600 }}
               >
                 🚀 Start Learning
