@@ -1,17 +1,17 @@
 // @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'XueCodex',
+  tagline: 'Hands-on AI Knowledge Codex',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://bittygpt.com',
   baseUrl: '/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'vlakmaker', // Your GitHub username
+  projectName: 'XueCodex',       // Your repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,31 +24,18 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/vlakmaker/XueCodex/tree/main/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-          remarkPlugins: [require('remark-math')],
-          rehypePlugins: [require('rehype-katex')],
-        },
+        blog: false, // disables blog
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -56,86 +43,64 @@ const config = {
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css',
       type: 'text/css',
-      integrity: 'sha384-mll67QQo1R+Vg3FoYAZ9uTzB8S3DFAP1nQFZ/foqg8IjrCSw56mQBiOkR1C+Xni1',
+      integrity:
+        'sha384-mll67QQo1R+Vg3FoYAZ9uTzB8S3DFAP1nQFZ/foqg8IjrCSw56mQBiOkR1C+Xni1',
       crossorigin: 'anonymous',
     },
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+  themeConfig: {
+    image: 'img/xuecodex-social.png',
+    navbar: {
+      title: 'XueCodex',
+      style: 'dark',
+      logo: {
+        alt: 'XueCodex Logo',
+        src: 'img/logo.png',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Docs',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        {
+          href: 'https://github.com/vlakmaker/XueCodex',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'AI Fundamentals',
+              to: '/docs/topics/ai-fundamentals/what-is-ai',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/vlakmaker/XueCodex',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} XueCodex. Built with 💙 & Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
 };
 
 export default config;
