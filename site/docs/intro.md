@@ -16,7 +16,7 @@ This space is powered by [BittyGPT](https://bittygpt.com) and crafted by Vera fo
 
 - [AI Fundamentals](/docs/topics/ai-fundamentals/what-is-ai)
 - [Machine Learning](/docs/topics/machine-learning/what-is-machine-learning)
-- [My Progress Tracker](/docs/progress)
+- [My Progress Tracker](/docs/topics/progress)
 
 ---
 
