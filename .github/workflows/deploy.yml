@@ -8,32 +8,29 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
+      - name: 📥 Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 🧠
+      - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install Dependencies 📦
+      - name: 📦 Install Dependencies
         run: npm install
         working-directory: ./site
 
-      - name: Build Docusaurus Site 🏗️
+      - name: 🏗️ Build Docusaurus Site
         run: npm run build
         working-directory: ./site
 
-        - name: Deploy to gh-pages 🚀
+      - name: 🚀 Deploy to gh-pages
         run: |
           cd ./site
-          # Set user only for the commit, not for authentication
-          git config --global user.name "github-actions[bot]" # Or your preferred bot name
-          git config --global user.email "github-actions[bot]@users.noreply.github.com" # Or your preferred bot email
-          npx docusaurus deploy
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          GIT_TERMINAL_PROMPT=0 npx docusaurus deploy
         env:
-          # GIT_USER: github-actions[bot]  <-- REMOVE THIS LINE
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Optional but recommended: Prevent credential helper conflicts
-          GIT_TERMINAL_PROMPT: 0
