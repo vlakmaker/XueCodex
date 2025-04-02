@@ -71,6 +71,88 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 ## 🗓️ Week 14
 
-### Monday
+### 🛠️ **March 31 – XueCodex v0.1.0 Foundation & Launch**
+
+**🧱 Project Structure & Launch**
+
+- Created the `v0.1.0-foundation` branch.
+- Refactored the project into a clean `/site/` structure.
+- Committed all working content and assets to GitHub.
+
+**🌐 Website Launch**
+
+- Fully built and deployed **xuecodex.tech** via GitHub Pages.
+- Fixed base URL (`/XueCodex`) issues that broke the homepage button and internal links.
+- Set up favicon and custom logo.
+- Centered and polished homepage layout with slogan + CTA button.
+- Added custom dark-theme-friendly logo.
+
+**🔁 Domains & Deployment**
+
+- Connected custom domains:
+    
+    → Primary: `xuecodex.tech`
+    
+    → Redirect: `bittygpt.com`
+    
+- Fixed GitHub Actions deployment:
+    - Switched to **SSH-based deploy** using `peaceiris/actions-gh-pages@v4`.
+    - Removed broken `GIT_USER` auth strategy.
+    - Ensured automatic deployment on `main` push.
+
+**📄 Content Fixes**
+
+- Created missing `intro.md` to fix Docusaurus default link.
+- Added `progress.md` to start logging learning milestones.
+- Fixed image path errors (`docs/img/` vs `static/img/`).
+- Cleaned up frontmatter, tags, and math syntax errors.
+- Final MDX compile: ✅
+
+**📣 Public Reveal**
+
+- You posted a launch teaser on **LinkedIn** with a screenshot of the homepage.
 
 
+pril 2, 2025
+
+## ✅ Daily Wins
+
+### 🏆 Finished Pendo's AI Product Management Course
+- 🎓 Earned certification and badge after >2 hours of video content
+- 📝 Took detailed notes across modules
+- 🧠 Converted all major learnings into structured Knowledge Items (KIs)
+- 💭 Reflected on course quality (video format not ideal)
+
+### 🧠 Knowledge Items Created
+- [x] AI Across the Product Management Lifecycle  
+- [x] AI in Product-Led Growth  
+- [x] AI & the Product-Led Organization  
+- [x] AI as a Tool for PMs  
+- [x] Evaluate + Iterate phases (with examples)
+- Added lifecycle visual + expanded summaries for all six PM phases
+
+### 🖼️ Visual Identity Progress
+- 🖼️ Designed a custom BittyGPT + Vlakmaker themed LinkedIn banner
+- 🎨 Iterated on composition (text positioning, scaling, and cropping)
+- 🛠️ Final version: zoomed out, no text, clean frame
+
+### 🧭 Philosophical Reflection
+- 💬 Discussed AI–human partnership  
+- 🤝 Defined "BittyGPT" as a collaborative persona
+- 🔍 Reflected on how your personality shaped our dynamic
+- 🧩 Talked about what you're seeking: exploration, learning, and meaning
+
+## 🧩 Meta
+- Continued to link career goals with identity
+- Focused on finishing, not just starting (XueCodex!)
+- Pushed through something boring to create value from it
+- Maintained clarity of voice and alignment with values
+
+---
+
+### 🔮 Next Steps
+- Continue adding concept KIs as we explore more topics
+- Apply learnings to upcoming AI strategy work
+- Share badge + milestone update on LinkedIn
+
+---
