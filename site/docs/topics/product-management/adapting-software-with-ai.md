@@ -1,11 +1,9 @@
-Always show details
-
-Copy
-# Re-running the code after kernel reset to save the markdown file again
-
-condensed_ki = """# 🧠 Knowledge Item: **How to Think About and Build with AI in Product Management**
-
 ---
+id: "adapting-software-with-ai"
+title: Adapting Software with AI
+tags: [AI, Product Management, Transformation]
+---
+
 
 ## 📌 Summary
 

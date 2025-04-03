@@ -1,3 +1,9 @@
+---
+id: "ai-pm-lifecycle"
+title: Product Management Lifecycle
+tags: [AI, Product Management, Lifecycle]
+---
+
 # 🧭 Product Management Lifecycle (Context + Definitions)
 
 Product management isn’t a straight line — it’s a cyclical process designed to continuously evolve the product by responding to user needs, market shifts, and business goals. Here's the full loop:

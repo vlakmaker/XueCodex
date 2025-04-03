@@ -1,3 +1,9 @@
+---
+id: "product-led-growth"
+title: Product-Led Growth
+tags: [AI, Product Management, Lifecycle]
+---
+
 
 ## 📌 Summary
 

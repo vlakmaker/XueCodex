@@ -1,4 +1,11 @@
-# 🧠 Knowledge Item: **How AI Is Transforming Product Management**
+---
+id: "overview-ai-product-management"
+title: How AI Is Transforming Product Management
+tags: [AI, Product Management, Lifecycle]
+---
+
+
+# 🧠 How AI Is Transforming Product Management**
 
 ## 📌 Summary  
 Modern product managers are becoming **AI product managers by default**. Whether enhancing workflows or embedding AI features into products, PMs now use AI to build smarter, deliver faster, and create more meaningful user experiences.
