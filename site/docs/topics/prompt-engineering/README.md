@@ -75,5 +75,3 @@ This section of the XueCodex is inspired by and references:
 - Use the playgrounds to test and tweak prompts.
 - Build your own "spells" and add them to the [Promptweaver’s Grimoire].
 
-Return to the [XueCodex Index](../../README.md) for a full overview of all AI and learning topics.
-

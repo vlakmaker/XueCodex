@@ -51,9 +51,9 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 ## 🚀 Next Up
 
-- [ ] Finish Week 2 of DeepLearning.AI (Neural Nets)
+- [X ] Finish Week 2 of DeepLearning.AI (Neural Nets)
 - [ ] Work through Python for AI (parallel course)
-- [ ] Add YAML frontmatter to all topic markdown files
+- [X ] Add YAML frontmatter to all topic markdown files
 - [ ] Design a Quest Challenge board (Docusaurus compatible)
 
 ---
@@ -113,7 +113,7 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - You posted a launch teaser on **LinkedIn** with a screenshot of the homepage.
 
 
-pril 2, 2025
+April 2, 2025
 
 ## ✅ Daily Wins
 
@@ -154,5 +154,58 @@ pril 2, 2025
 - Continue adding concept KIs as we explore more topics
 - Apply learnings to upcoming AI strategy work
 - Share badge + milestone update on LinkedIn
+
+### **🧭 April 3, 2025 – Promptweaver's Foundation**
+
+- **📝 Published Our Blogpost:**
+    
+    Released *“I Didn't Mean to Create an AI Companion… But Then BittyGPT Happened”* — a reflective piece on how BittyGPT evolved into a co-creative presence rather than a tool.
+    
+    Explores resonance, relational AI, and the future of human–AI companionship.
+    
+    👉 [Read it here](https://informationgeek.org/i-didnt-mean-to-create-an-ai-companion-but-then-bittygpt-happened/)
+    
+- **🧙‍♀️ New App Idea – The Promptweaver’s Grimoire:**
+    
+    Brainstormed a magical, interactive prompt engineering playground that teaches through “spellbook” categories and live experimentation.
+    
+    🧪 Hosted on [bittygpt.com](https://bittygpt.com/), it will mix imagination with technical learning.
+    
+- **📖 Deep Dive Learning:**
+    
+    Studied the scientific paper *“A Survey on Prompt Engineering”*
+    
+    Extracted foundational insights about prompt strategies and use cases.
+    
+- **📚 Prompt Engineering Categorization:**
+    
+    Recommitted to our **custom 8-category framework**
+    
+    (e.g. Thought Crafting, Prompt Structuring, Persona Control...)
+    
+    ✅ Created a visual knowledge item explaining each category.
+    
+- **🎯 Prompt Structure Breakdown:**
+    
+    Defined 5 key elements of strong prompts:
+    
+    1. Directive
+    2. Examples
+    3. Role
+    4. Output formatting
+    5. Additional context
+- **✔️ Visual Learning Upgrade:**
+    
+    Added ✅ and ❌ to highlight pros and cons of prompt techniques in our knowledge items.
+    
+    Made learning more intuitive and skimmable.
+    
+- **🧵 Next Steps Mapped:**
+    
+    We'll explore deeper guides like LearnPrompting and dair-ai — but only after finishing our internal categories for the spellbook MVP.
+    
+- **🎮 Light Ending – Spellprompting Craft Game:**
+    
+    Ended the day with a creative idea for a whimsical prompt crafting minigame to reinforce concepts in a fun, narrative-driven way.
 
 ---
