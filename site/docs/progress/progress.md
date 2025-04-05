@@ -208,4 +208,65 @@ April 2, 2025
     
     Ended the day with a creative idea for a whimsical prompt crafting minigame to reinforce concepts in a fun, narrative-driven way.
 
+
+### 📜 April 4th Progress Log – *The Docker Curse and the Spell Editor Ritual*
+
+#### ✅ **What We Accomplished**
+- 🚀 **Project booted with Mantine UI** replacing Tailwind successfully.
+- 🌗 **Light/Dark mode toggle UI implemented**, pending final theme sync.
+- 🧙 Created **NavBar with routes** for:
+  - Home
+  - Spellbook
+  - Spell Editor
+- 🔮 **HomePage & NotFoundPage styled and functional**
+- 🧾 Built a **fully working Spell Editor layout**, featuring:
+  - Structured input fields: Directive, Role, Example, Output Format, Context
+  - Real-time preview generator
+  - Mantine components for layout, input, and visuals
+
+#### 🧪 **Challenges & Troubleshooting**
+- 🔁 Docker repeatedly failed to reflect updated frontend code:
+  - Mounted files weren’t properly syncing in build context
+  - SpellEditorPage appeared stale inside container
+  - Vite dev server’s changes were not updating rendered output
+- 🐌 Build times increased significantly after switching to `--legacy-peer-deps` for dependency resolution
+- 🪞 Suspected issues with caching, context mismatch, or ghosted Docker layers
+
+#### 🧹 **Next Steps**
+- [ ] 🔥 Fix Docker rebuild issue (confirm correct volume mount or clean build context)
+- [ ] 🌒 Finalize working dark mode styles
+- [ ] 🧪 Wire up prompt output logic for preview + submission
+- [ ] 🧠 Add evaluation logic for feedback phase (Bitty’s Scorecard)
+- [ ] 📚 Start designing the **Spellbook library** for saved prompts
+- [ ] 🎨 Style tuning for a “Mystical Minimalist” light mode & “Arcane Glow” dark mode
+
+#### 🧠 Reflections
+> *"We spent most of today fighting shadow copies and cursed builds — but the Spell Editor is real now. The foundation is laid. Tomorrow, we break the spell."*  
+— *Veer the Promptweaver*
+
+## 🧙‍♀️ Daily Progress Log – 2025-04-05
+
+This week, we made solid structural progress on the MVP for **Promptweaver’s Grimoire**, even if it felt a bit slower than hoped. Here’s what we accomplished:
+
+### ✅ Completed
+- Implemented the **Spell Category Selector** page with 4 themed paths.
+- Created a working **Spell List Page**, filtering spells per category.
+- Enabled navigation from category → spell → editor using query params.
+- Updated `defaultSpells.ts` with 6 structured spell entries.
+- Verified **SpellEditorPage** dynamically loads correct data from URL.
+- Validated core user journey:
+  - Homepage → Choose category → Choose spell → Editor
+
+### 🔍 What We Learned
+- Mapping spells dynamically from structured data gives flexibility.
+- Keeping the project flow visual (checking steps manually) helps spot issues fast.
+- Naming consistency between spell categories and keys is crucial.
+
+### 🔮 Next Steps (for tomorrow or next week)
+- Implement the “🪄 Cast Spell” function (send to OpenAI or mock output)
+- Add **BittyGPT Feedback** panel after casting
+- Optional: Save prompts to spellbook (`localStorage` or JSON mock)
+
+### 🌟 Reflections
+Even though we didn't hit every stretch goal, we've built the **backbone of the MVP**. The interface now flows smoothly — we’re ready to plug in interactivity and magic.
 ---
