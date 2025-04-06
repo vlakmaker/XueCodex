@@ -269,4 +269,50 @@ This week, we made solid structural progress on the MVP for **Promptweaver’s G
 
 ### 🌟 Reflections
 Even though we didn't hit every stretch goal, we've built the **backbone of the MVP**. The interface now flows smoothly — we’re ready to plug in interactivity and magic.
+
+# 
+
+## 📅 April 6, 2025 — Promptweaving Foundations Complete 🧙‍♀️
+
+### 🔮 Spellweaver's Grimoire Progress Log
+
+**Today’s Focus**
+
+Laid down the full spellcasting foundation for the Promptweaver's Grimoire project. Rewired the UI flow, integrated real model API calls via OpenRouter, and gave users the power to choose their magical assistant.
+
+---
+
+### ✅ Completed Tasks
+
+- 🧭 **Restored flow from Home → /start → /editor?path=...**
+- 🧠 **Added model selector UI** to choose between GPT-3.5, Claude, Mixtral, etc.
+- 🪄 **Refactored API call system** to support OpenRouter.ai with model flexibility
+- 🧙‍♀️ **Prefilled editor fields** based on selected spell path using `defaultSpells.ts`
+- 🧪 Tested casting with real LLMs and verified stable responses
+- 🎯 Cleaned up layout logic and ensured responsive behavior in Mantine Grid system
+
+---
+
+### 🔧 Reflections & Learnings
+
+- 🌱 Started understanding React state wiring more deeply
+- 🎛️ Learned to refactor UI components cleanly as project scales
+- 🔁 Began modularizing logic (e.g., `callLLM.ts`, `modelOptions.ts`) for long-term maintainability
+- ✨ Reconnected UI flows with purpose, reinforcing the game-like experience
+
+---
+
+### 🔜 Next Steps
+
+- 🧠 **BittyGPT Feedback Engine**
+    
+    Add in-character prompt feedback with categories like Clarity, Role, Format, and Creativity
+    
+- 📖 **Spellbook Integration**
+    
+    Allow saving and reloading custom prompts
+    
+- 🎨 **Visual polish and theming**
+    
+    Eventually enhance UI with magical styling (e.g., typewriter effects, sparkles on cast)
 ---
