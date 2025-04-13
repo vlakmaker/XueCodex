@@ -38,8 +38,8 @@ In logistic regression, you:
 **Formula:**
 
 \[
-`z = w^T x + b \\`
-`a = \sigma(z)`
+z = w^T x + b \\
+a = \sigma(z)
 \]
 
 Then compare \( a \) with the label \( y \) using a loss function \( \mathcal{L}(a, y) \), and adjust \( w, b \) with backpropagation.
@@ -59,7 +59,7 @@ If you've studied **logistic regression**, you're already halfway there: forward
 ## 🤖 Key Concepts
 
 - **Input layer**: Takes input features \( x_1, x_2, x_3 \)
-- **Hidden `layer(s)`**: Neurons that apply transformations
+- **Hidden layer(s)**: Neurons that apply transformations
 - **Output layer**: Final prediction \( \hat{y} \)
 
 **Notation:**
@@ -127,11 +127,11 @@ Matrix math lets you skip the loop. Instead of making one sandwich at a time (lo
 
 ## ⚙️ What is Vectorization?
 
-`Vectorization = replacing manual loops with fast matrix operations.`
+Vectorization = replacing manual loops with fast matrix operations.
 
 You said it best:
 
-&gt; 2² = 4 is the same as 1 + 1 + 1 + 1 — same result, but one is way faster.
+> 2² = 4 is the same as 1 + 1 + 1 + 1 — same result, but one is way faster.
 
 Just like **Ramanujan** found shortcuts while **Hardy** stuck to slow, careful math. Vectorization is your Ramanujan move.
 
@@ -139,7 +139,7 @@ Just like **Ramanujan** found shortcuts while **Hardy** stuck to slow, careful m
 
 ## 🧠 Summary (Your Polished Words)
 
-&gt; In logistic regression, we calculate a probability using a weighted sum of inputs passed through a sigmoid function. Neural networks extend this idea by stacking layers of these computations. Each layer transforms and mixes the inputs more deeply, creating a more powerful model that can learn complex patterns. Just like the brain, neurons in a neural network pass information to each other, and the entire network learns through forward and backward propagation.
+> In logistic regression, we calculate a probability using a weighted sum of inputs passed through a sigmoid function. Neural networks extend this idea by stacking layers of these computations. Each layer transforms and mixes the inputs more deeply, creating a more powerful model that can learn complex patterns. Just like the brain, neurons in a neural network pass information to each other, and the entire network learns through forward and backward propagation.
 
 ---
 
