@@ -78,13 +78,13 @@ Your **MythosQuest** project is a perfect candidate for a custom RAG pipeline. W
 - Track semantic memories and consequences across play sessions
 - Add a reranker or feedback mechanism to improve retrieval relevance
 
-> 💡 Think of MythosQuest RAG as a **dynamic lore oracle** — instead of hardcoding paths, you let players explore your world and the AI *remembers where they’ve been.*
+&gt; 💡 Think of MythosQuest RAG as a **dynamic lore oracle** — instead of hardcoding paths, you let players explore your world and the AI *remembers where they’ve been.*
 
 ---
 
 ## 🧠 Analogy
 
-> RAG is like giving your LLM a **magic backpack full of scrolls** before answering. Without it, it guesses. With it, it reads first—then answers smartly.
+&gt; RAG is like giving your LLM a **magic backpack full of scrolls** before answering. Without it, it guesses. With it, it reads first—then answers smartly.
 
 ---
 

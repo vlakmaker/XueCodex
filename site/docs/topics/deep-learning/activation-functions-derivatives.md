@@ -44,7 +44,7 @@ Perfect for binary classification — the output behaves like a probability: “
 
 ### 🧮 Derivative:
 
-- Max slope is at , where , and slope = 0.25
+- Max slope is at , where , and `slope = 0.25`
 - At or , slope ~ 0 ➝ slow learning
 
 ---
@@ -66,7 +66,7 @@ Hidden layers in older architectures, especially when zero-centering helps optim
 
 ### 🧮 Derivative:
 
-- Max slope = 1 at
+- Max `slope = 1 at`
 - At , ,
 - Still fades at extremes, but performs better than sigmoid.
 
@@ -162,5 +162,5 @@ That’s why ReLU and Leaky ReLU are preferred — they don’t suffer from tiny
 
 👉 Think of it like this:
 
-> "Use ReLU to think, use linear to speak." 🧠🗣️
->
+&gt; "Use ReLU to think, use linear to speak." 🧠🗣️
+&gt;

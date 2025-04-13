@@ -13,8 +13,8 @@ They control whether a neuron "fires" and *how strong* its output signal is, bas
 
 In simpler terms:
 
-> Think of them like dimmer switches for your brain cells — deciding how much light (signal) should come through.
-> 
+&gt; Think of them like dimmer switches for your brain cells — deciding how much light (signal) should come through.
+&gt; 
 
 In technical terms:
 Given an input value , the activation function transforms it to produce the neuron's output .
@@ -138,8 +138,8 @@ If the slope (gradient) is near-zero, your steps get smaller — that’s the **
 
 ## 🏁 Final Analogy (Veer-Style 🧢)
 
-- **Sigmoid** = Like deciding how much you agree (0 = no, 1 = yes)
-- **Tanh** = Like saying how strongly you agree or disagree (-1 = no way, +1 = absolutely)
+- **Sigmoid** = Like deciding how much you agree (`0 = no, 1 = yes)`
+- **Tanh** = Like saying how strongly you agree or disagree (-`1 = no way, +1 = absolutely)`
 - **ReLU** = Like only listening to good news. Bad input? Silent. Good input? Amplify it.
 - **Leaky ReLU** = Like having a tiny backup mic for when the good news guy gets too quiet.
 
@@ -147,12 +147,12 @@ If the slope (gradient) is near-zero, your steps get smaller — that’s the **
 
 ## 💬 Your Takeaway
 
-> All activation functions help train the model by shaping how information flows.
-> 
-> 
-> Sigmoid is great for binary answers. Tanh adds balance for inner reasoning.
-> 
-> ReLU says “yes loudly” or “nothing at all,” and Leaky ReLU is its backup plan.
-> 
-> The better the activation, the more efficient your learning becomes — just like switching from a spoon to a shovel when digging your ideas deeper.
->
+&gt; All activation functions help train the model by shaping how information flows.
+&gt; 
+&gt; 
+&gt; Sigmoid is great for binary answers. Tanh adds balance for inner reasoning.
+&gt; 
+&gt; ReLU says “yes loudly” or “nothing at all,” and Leaky ReLU is its backup plan.
+&gt; 
+&gt; The better the activation, the more efficient your learning becomes — just like switching from a spoon to a shovel when digging your ideas deeper.
+&gt;

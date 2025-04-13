@@ -35,7 +35,7 @@ The model fails to learn complex representations. It might as well be a linear m
 Instead of setting weights to 0, we randomly initialize them with **small values** (e.g. multiply random values by 0.01).
 
 ```
-W[1] = np.random.randn(layer_dims[1], layer_dims[0]) * 0.01
+W[1] = np.random.`randn(layer_dims[1], layer_dims[0])` * 0.01
 ```
 
 This ensures:
@@ -88,5 +88,5 @@ These scale weights based on the number of neurons in a layer to maintain stable
 
 ## 📌 Codex Rule of Thumb:
 
-> "Don’t let neurons be clones. Randomize to specialize."
->
+&gt; "Don’t let neurons be clones. Randomize to specialize."
+&gt;
