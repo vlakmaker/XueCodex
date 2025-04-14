@@ -62,7 +62,7 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 ## 🚀 Next Up
 
 - [ ] Finish Week 4 of DeepLearning.AI
-- [ ] Finalize BittyGPT homepage polish
+- [X] Finalize BittyGPT homepage polish
 - [ ] Deploy MythosQuest MVP live
 - [ ] Polish Spellweaver spell previews & UX
 - [ ] Polish CV & prepare job applications
@@ -123,4 +123,23 @@ Today was monumental: we launched the **BittyGPT Homepage** live at [bittygpt.co
 | Spellweaver Polish | UX | Polish spell UI + hover states | +4 UX Ritualist XP |
 | Activation Codex Upload | Knowledge | Add new entry | +2 Clarity Bonus |
 | Share BittyGPT on LinkedIn | Visibility | Announce site + apps | +2 Recognition XP |
+
+
+### 🧠 April 14 – Classical AI Search Fundamentals (CS50 AI)
+
+**Goal**:  
+Strengthen foundational understanding of classical AI search strategies, consolidate knowledge of BFS, DFS, Greedy Best-First, A*, and game tree algorithms.
+
+**Focus Areas**:
+- Revisited **search problem structure**: initial state, actions, transition model, goal test, path cost.
+- Compared **BFS vs DFS** for completeness, optimality, and use cases.
+- Studied **Greedy Best-First Search** and **A\*** as heuristic-guided strategies.
+- Explored **Minimax**, **Alpha-Beta Pruning**, and **Depth-Limited Minimax** for adversarial game AI.
+
+**Outcome**:
+- Created a structured Knowledge Item: *Search Algorithms in AI*, summarizing all explored methods with examples, pros/cons, and application contexts.
+- Recognized parallels between ML optimization and classical search cost models.
+
+**Personal Insight**:  
+Taking a step back from deep learning to refresh classical foundations was energizing and clarifying. The CS50 lecture format offered a comfortable pace for knowledge reinforcement, while the connections to prior logistic regression work made the material feel intuitive.
 
