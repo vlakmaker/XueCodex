@@ -3,7 +3,6 @@ id: "what-is-prompt-engineering"
 title: What is Prompt Engineering?
 tags: [AI, Prompt Engineering, Structure]
 ---
-
 # 🧠 What is Prompt Engineering?
 
 **Prompt engineering** is the art and science of designing effective *natural language instructions* (prompts) to guide large language models (LLMs) like ChatGPT to produce useful, accurate, and creative responses.

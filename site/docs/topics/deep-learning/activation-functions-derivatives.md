@@ -3,7 +3,6 @@ id: "activation-functions-derivatives"
 title: "Activation Functions & Derivatives"
 tags: [deep learning, activation sfunctions, sigmoid, tahn, relu]
 ---
-
 # 🧠 Activation Functions & Derivatives
 
 Activation functions are what make neural networks more than just glorified linear regressions. They add non-linearity — which gives neural networks their superpower: the ability to learn complex patterns and behaviors. Their derivatives are critical for training the network effectively through **backpropagation**.

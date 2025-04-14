@@ -3,7 +3,6 @@ id: intro
 title: Welcome to XueCodex
 slug: /intro
 ---
-
 # 👋 Welcome to XueCodex!
 
 XueCodex is your experimental AI learning vault — a living, open-source knowledge base that blends deep learning theory, hands-on experimentation, and conceptual reflection.

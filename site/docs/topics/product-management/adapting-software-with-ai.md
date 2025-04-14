@@ -3,8 +3,6 @@ id: "adapting-software-with-ai"
 title: Adapting Software with AI
 tags: [AI, Product Management, Transformation]
 ---
-
-
 ## 📌 Summary
 
 AI is not just a trend — it's becoming a foundational capability in modern product management. From enhancing decision-making to enabling personalized user experiences, AI is shifting how we design, build, and evolve digital products. This guide condenses key principles, frameworks, and practical tips to help PMs build responsibly and effectively with AI.

@@ -1,10 +1,9 @@
 ---
-id: week-15
+id: "week-15"
 title: Progress Tracker Week 15
 sidebar_label: Progress Week 15
-slug: /progress/week-15
+slug: "/progress/week-15"
 ---
-
 # 📈 AI Learning Progress
 
 This document tracks my day-to-day progress while building the **XueCodex** knowledge base and learning AI through a mix of structured courses and hands-on experimentation.

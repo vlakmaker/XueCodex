@@ -4,7 +4,6 @@ title: Progress Tracker
 sidebar_label: Progress
 slug: /progress/progress
 ---
-
 # 📈 AI Learning Progress
 
 This document tracks my day-to-day progress while building the **XueCodex** knowledge base and learning AI through a mix of structured courses and hands-on experimentation.

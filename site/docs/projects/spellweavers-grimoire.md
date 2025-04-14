@@ -3,7 +3,6 @@ id: "prompt-engineering-categories"
 title: "Spellweaver’s Grimoire  Product Thinking Overview"
 tags: [AI, Projects, Programming]
 ---
-
 ## 🧙‍♀️ Spellweaver’s Grimoire – Product Thinking Overview
 
 ### ✨ Vision

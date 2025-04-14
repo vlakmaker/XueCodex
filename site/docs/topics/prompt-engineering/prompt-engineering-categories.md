@@ -3,7 +3,6 @@ id: "prompt-engineering-categories"
 title: Prompt Engineering Core Categories
 tags: [AI, Prompt Engineering, Structure]
 ---
-
 # 🧠 Prompt Engineering: Core Categories
 
 Prompt engineering is more than just writing instructions — it’s the art of shaping interaction with language models to unlock insight, precision, and creativity. To bring clarity to this rapidly evolving field, we've organized prompt techniques into **eight custom categories**, each representing a different dimension of interaction.

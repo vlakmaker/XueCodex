@@ -3,7 +3,6 @@ id: "activation-functions"
 title: "Activation Functions for Humans: Sigmoid, Tanh, and ReLU (Deep Dive)"
 tags: [deep learning, activation sfunctions, sigmoid, tahn, relu]
 ---
-
 # Activation Functions for Humans: Sigmoid, Tanh, and ReLU (Deep Dive)
 
 ## 🤖 What Are Activation Functions?

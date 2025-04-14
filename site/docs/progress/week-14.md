@@ -1,11 +1,9 @@
 ---
-id: week-14
+id: "week-14"
 title: Progress Tracker Week 14
-sidebar_label: Week-14
-slug: /progress/week-14
+sidebar_label: "Week-14"
+slug: "/progress/week-14"
 ---
-
-
 # 📅 Weekly Goals
 
 | Week | Focus Area | Status | Notes |

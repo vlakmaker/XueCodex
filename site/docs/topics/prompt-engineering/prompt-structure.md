@@ -3,7 +3,6 @@ id: "prompt-structure"
 title: Prompt Structuring
 tags: [AI, Prompt Engineering, Structure]
 ---
-
 ## 🧰 Prompt Structuring
 
 **What it is:**

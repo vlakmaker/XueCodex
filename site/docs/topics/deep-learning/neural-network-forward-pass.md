@@ -1,9 +1,8 @@
 ---
-id: neural-network-forward-pass
+id: "neural-network-forward-pass"
 title: Neural Network Forward Pass
 tags: [neural-networks, forward-propagation, vectorization, beginner]
 ---
-
 # 🧠 Neural Network Forward Propagation
 
 ## 🔁 Quick Recap: What is a Neural Network?
@@ -30,19 +29,19 @@ Think of it like stacking multiple **logistic regressions**, each feeding into t
 
 In logistic regression, you:
 
-- Take inputs \( x_1, x_2, x_3 \)
-- Multiply them by weights \( w \)
-- Add a bias \( b \)
-- Pass it through a **sigmoid** function to get a probability \( \hat{y} \)
+- Take inputs $x_1, x_2, x_3$
+- Multiply them by weights $w$
+- Add a bias $b$
+- Pass it through a **sigmoid** function to get a probability $\hat{y}$
 
 **Formula:**
 
-\[
+$$
 z = w^T x + b \\
 a = \sigma(z)
-\]
+$$
 
-Then compare \( a \) with the label \( y \) using a loss function \( \mathcal{L}(a, y) \), and adjust \( w, b \) with backpropagation.
+Then compare $a$ with the label $y$ using a loss function $\mathcal{L}(a, y)$, and adjust $w, b$ with backpropagation.
 
 ---
 
@@ -50,7 +49,7 @@ Then compare \( a \) with the label \( y \) using a loss function \( \mathcal{L}
 
 Forward propagation is the process by which a neural network **calculates predictions**.
 
-It's like passing your ingredients (inputs) through a magical kitchen (layers of neurons), mixing everything together with weights and biases, and applying secret sauces (activation functions) until you get a tasty final dish: a prediction \( \hat{y} \).
+It's like passing your ingredients (inputs) through a magical kitchen (layers of neurons), mixing everything together with weights and biases, and applying secret sauces (activation functions) until you get a tasty final dish: a prediction $\hat{y}$.
 
 If you've studied **logistic regression**, you're already halfway there: forward propagation is just logistic regression done **many times in parallel**, layer by layer.
 
@@ -58,17 +57,17 @@ If you've studied **logistic regression**, you're already halfway there: forward
 
 ## 🤖 Key Concepts
 
-- **Input layer**: Takes input features \( x_1, x_2, x_3 \)
+- **Input layer**: Takes input features $x_1, x_2, x_3$
 - **Hidden layer(s)**: Neurons that apply transformations
-- **Output layer**: Final prediction \( \hat{y} \)
+- **Output layer**: Final prediction $\hat{y}$
 
 **Notation:**
 
-- \( a^{[0]} = x \): Input vector  
-- \( W^{[l]} \): Weight matrix for layer \( l \)  
-- \( b^{[l]} \): Bias vector for layer \( l \)  
-- \( z^{[l]} = W^{[l]} a^{[l-1]} + b^{[l]} \): Linear combination  
-- \( a^{[l]} = \sigma(z^{[l]}) \): Activation function
+- $a^{[0]} = x$: Input vector  
+- $W^{[l]}$: Weight matrix for layer $l$  
+- $b^{[l]}$: Bias vector for layer $l$  
+- $z^{[l]} = W^{[l]} a^{[l-1]} + b^{[l]}$: Linear combination  
+- $a^{[l]} = \sigma(z^{[l]})$: Activation function
 
 ---
 
@@ -80,36 +79,36 @@ Let’s say we have 3 inputs and 1 hidden layer with 4 neurons.
 
 Each neuron behaves like logistic regression:
 
-\[
+$$
 z_i^{[1]} = w_i^{[1]T} x + b_i^{[1]} \\
 a_i^{[1]} = \sigma(z_i^{[1]})
-\]
+$$
 
 Vectorized:
 
-\[
+$$
 z^{[1]} = W^{[1]} x + b^{[1]} \\
 a^{[1]} = \sigma(z^{[1]})
-\]
+$$
 
 Where:
 
-- \( W^{[1]} \in \mathbb{R}^{4 \times 3} \)  
-- \( x \in \mathbb{R}^{3 \times 1} \)  
-- \( b^{[1]} \in \mathbb{R}^{4 \times 1} \)
+- $W^{[1]} \in \mathbb{R}^{4 \times 3}$  
+- $x \in \mathbb{R}^{3 \times 1}$  
+- $b^{[1]} \in \mathbb{R}^{4 \times 1}$
 
 ### Step 2: Output Layer
 
-\[
+$$
 z^{[2]} = W^{[2]} a^{[1]} + b^{[2]} \\
 a^{[2]} = \hat{y} = \sigma(z^{[2]})
-\]
+$$
 
 Where:
 
-- \( W^{[2]} \in \mathbb{R}^{1 \times 4} \)  
-- \( a^{[1]} \in \mathbb{R}^{4 \times 1} \)  
-- \( b^{[2]} \in \mathbb{R}^{1 \times 1} \)
+- $W^{[2]} \in \mathbb{R}^{1 \times 4}$  
+- $a^{[1]} \in \mathbb{R}^{4 \times 1}$  
+- $b^{[2]} \in \mathbb{R}^{1 \times 1}$
 
 ---
 
@@ -117,8 +116,8 @@ Where:
 
 A matrix is just a **collection of variables**:
 
-- \( W^{[1]} \): weights for all neurons
-- \( a^{[1]} \): activations of all neurons
+- $W^{[1]}$: weights for all neurons
+- $a^{[1]}$: activations of all neurons
 - Output of one layer becomes input to the next
 
 Matrix math lets you skip the loop. Instead of making one sandwich at a time (loop 🥪), you're doing a full lunch spread at once (matrix 🍱).

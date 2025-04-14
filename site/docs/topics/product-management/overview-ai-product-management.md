@@ -3,8 +3,6 @@ id: "overview-ai-product-management"
 title: How AI Is Transforming Product Management
 tags: [AI, Product Management, Lifecycle]
 ---
-
-
 # 🧠 How AI Is Transforming Product Management**
 
 ## 📌 Summary  

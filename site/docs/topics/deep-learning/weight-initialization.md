@@ -1,9 +1,8 @@
 ---
-id: weight-initialization
+id: "weight-initialization"
 title: Weight Initialization in Neural Networks
 tags: [machine-learning, deep learning, weights]
 ---
-
 # 🎯  Weight Initialization in Neural Networks
 
 You’ve learned how to do forward propagation, backpropagation, and gradient descent. But now comes a crucial design decision: **How do we initialize the weights?**

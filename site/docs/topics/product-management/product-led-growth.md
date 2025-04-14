@@ -1,10 +1,8 @@
 ---
 id: "product-led-growth"
-title: Product-Led Growth
+title: "Product-Led Growth"
 tags: [AI, Product Management, Lifecycle]
 ---
-
-
 ## 📌 Summary
 
 Product-Led Growth (PLG) is a go-to-market strategy that puts the **product experience at the center of acquisition, conversion, and expansion**. The rise of AI — particularly generative and behavioral intelligence — makes PLG even more powerful by personalizing, accelerating, and scaling every aspect of the user journey.
