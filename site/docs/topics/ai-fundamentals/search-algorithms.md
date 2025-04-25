@@ -1,10 +1,9 @@
 ---
 title: Search Algorithms in AI
-id: search-algorithms
+id: "search-algorithms"
 tags: [ai-fundamentals, search, planning, heuristics, games, pathfinding]
-summary: A detailed overview of uninformed and heuristic-based search strategies used in classical AI, with practical comparisons and use cases.
+summary: "A detailed overview of uninformed and heuristic-based search strategies used in classical AI, with practical comparisons and use cases."
 ---
-
 # 🧭 Search Algorithms in AI
 
 This knowledge item covers foundational search algorithms used in classical AI. These algorithms guide intelligent agents in navigating problem spaces, finding optimal paths, or making strategic decisions in games.

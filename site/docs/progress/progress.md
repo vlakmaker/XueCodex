@@ -18,56 +18,53 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 ## 🗕️ Weekly Goals
 
-| Week | Focus Area | Status | Notes |
-| --- | --- | --- | --- |
-| 1 | Deep Learning Foundations | ✅ Done | Finished logistic regression + spam detector mini-project |
-| 2 | Neural Networks + Python for AI | ✅ Done | Finished Week 2 + spam lab + Py course |
-| 3 | Consolidation & Project Work | ✅ Done | MythosQuest mostly refactored, knowledge items added |
-| 4 | CV + MythosQuest + PromptGrimoire Polish | 🟡 In Progress | Week 4 started — study + shipping week |
+| Week | Focus Area                        | Status         | Notes                                                            |
+| ---- | --------------------------------- | -------------- | ---------------------------------------------------------------- |
+| 15   | BittyGPT Homepage Launch          | ✅ Done         | Launched [bittygpt.com](https://bittygpt.com) with multiple apps |
+| 16   | MythosQuest Refactor + Deployment | ✅ Done         | Completed modular backend refactor and server deployment         |
+| 17   | Scenario Engine + Sticky Memory   | 🟡 In Progress | Start Phase 4 and advanced gameplay mechanics                    |
 
 ---
 
 ## 🔥 Quest Challenges
 
-| Quest 🛕 | Type | Status | Reward 🏆 |
-| --- | --- | --- | --- |
-| Logistic Regression Mini-Lab | Hands-on | ✅ Done | +3 Coding Intuition |
-| Spam Detector Classifier | Project | ✅ Done | +4 Data Alchemy |
-| Pixel Art Avatar | Creative | ✅ Done | +5 Identity Boost |
-| AI Notebook Refactor | Practice | ✅ Done | +2 Organizational Wisdom |
-| AI Progress Tracker | Meta | ✅ Done | +1 Self-Awareness XP |
-| MythosQuest MVP Refactor | Project | ✅ Done | +6 Full-Stack Insight |
-| Week 2 DeepLearning.AI Finish | Learning | ✅ Done | +4 Neural Network XP |
-| Spellweaver’s Grimoire MVP Launch | Project | ✅ Done | +7 UX Ritualist XP |
-| BittyGPT Homepage + Docker | DevOps + Creative | ✅ Done | +6 Deployment Mastery |
-| Feedback Loop Feature Spec + UX Flow | PM/UX | ✅ Done | +5 Product Vision XP |
+| Quest 🛕                              | Type              | Status  | Reward 🏆             |
+| ------------------------------------- | ----------------- | ------- | --------------------- |
+| BittyGPT Homepage + Docker Deployment | DevOps + Creative | ✅ Done  | +6 Deployment Mastery |
+| Spellweaver Grimoire MVP Launch       | Project           | ✅ Done  | +7 UX Ritualist XP    |
+| MythosQuest Full Backend Refactor     | Project           | ✅ Done  | +8 Full-Stack Insight |
+| MythosQuest Live Deployment           | Project           | ✅ Done  | +7 Worldbuilder XP    |
+| MythosQuest CI/CD Setup               | DevOps            | ✅ Done  | +5 Automation Sage    |
+| Secure API Key Management (Fernet)    | Security          | ✅ Done  | +4 Encryption Mastery |
+| SQLAlchemy ORM Refactor               | Backend           | ✅ Done  | +4 DB Alchemy         |
+| Scenario Engine Prototype             | Gameplay          | 🔜 Next | +6 Lorecrafter XP     |
 
 ---
 
 ## 🧠 Concept Mastery
 
-| Topic | Confidence 🌟 |
-| --- | --- |
-| Supervised Learning | ⭐⭐⭐ |
-| Logistic Regression | ⭐⭐⭐⭐ |
-| Numpy & Matplotlib | ⭐⭐⭐⭐ |
-| Model Evaluation Metrics | ⭐⭐⭐ |
-| Prompt Engineering | ⭐⭐⭐⭐ |
-| Computation Graphs | ⭐⭐⭐⭐ |
-| Backpropagation | ⭐⭐⭐⭐ |
-| Vectorization | ⭐⭐⭐⭐ |
+| Topic                               | Confidence 🌟 |
+| ----------------------------------- | ------------- |
+| Flask Modular Design                | ⭐⭐⭐⭐          |
+| Docker & Traefik Deployment         | ⭐⭐⭐⭐          |
+| SQLAlchemy ORM                      | ⭐⭐⭐⭐          |
+| Secure API Key Handling             | ⭐⭐⭐⭐          |
+| Streaming AI Responses              | ⭐⭐⭐           |
+| Prompt Engineering                  | ⭐⭐⭐⭐          |
+| Classical AI Search (BFS, DFS, A\*) | ⭐⭐⭐⭐          |
 
 ---
 
 ## 🚀 Next Up
 
-- [ ] Finish Week 4 of DeepLearning.AI
-- [X] Finalize BittyGPT homepage polish
-- [ ] Deploy MythosQuest MVP live
-- [ ] Polish Spellweaver spell previews & UX
-- [ ] Polish CV & prepare job applications
-- [ ] Add activation function + derivative Codex pages
-- [ ] Share BittyGPT launch on LinkedIn
+- 🔄 Merge Docker/CD configuration into `main`
+- 🧙‍♂️ Start Phase 4: Scenario Engine and Character Creation UI
+- 🧠 Implement sticky memory system
+- 🗃️ Expand user database for session retention
+- 🧩 Improve UX: settings layout, dynamic model dropdowns
+- 🎨 Polish frontend styles for better immersion
+- 📢 Share MythosQuest Phase 3 milestone on LinkedIn
+- 🛠️ Continue AI learning: CS50 AI, DeepLearning.AI Week 4
 
 ---
 
@@ -75,71 +72,38 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 - Alchemist Learner 💡
 - Experimental & visual
-- Driven by curiosity and "seeing it work"
-- Loves coding by doing, story-based challenges, and visual structure
+- Driven by curiosity and storycraft
+- Loves coding by doing, worldbuilding challenges, and visual structure
 
 ---
 
 # Log
 
-## 🗓️ Week 15 (April 7–13, 2025)
+## 🗓️ Tuesday 2025-04-22
 
-### 💡 April 7, 2025 — **BittyGPT Becomes Real**
+### ✅ MythosQuest Refactor and CI/CD Foundation
 
-Today was monumental: we launched the **BittyGPT Homepage** live at [bittygpt.com](https://bittygpt.com), creating a central portal that links together our projects.
-
-✅ What We Did:
-- Created a **Next.js static site** and deployed on Oracle VPS
-- Styled the homepage with Tailwind + Lucide
-- Featured 3 apps: Spellweaver, MythosQuest, and XueCodex
-- Added SSL, DNS routing, and HTTPS via Cloudflare
-- Wrote a feature spec for Spellweaver Feedback Loop
-- Practiced UI polish, QA, and static export techniques
-
-🔧 Promptweaver's Feedback Engine:
-- Added reactive BittyGPT feedback system
-- Structured prompt scoring ideas
-- Integrated with the new homepage layout
-
-⚛️ Skills:
-- Frontend + Docker deployment
-- Prompt design & feedback scaffolding
-- UX alignment + layout polish
-
-### 🌟 Highlight
-> We shipped the BittyGPT Feedback Loop. That means everything.
+- Refactored MythosQuest backend into modular Flask structure
+- Replaced SQLite raw queries with full SQLAlchemy ORM
+- Implemented Fernet encryption for secure API key storage
+- Modularized settings, game logic, and authentication
+- Upgraded Oracle server for production Docker hosting
+- Set up GitHub Actions workflow for CI/CD
+- Finished IBM Generative AI and LLMs: Architecture & Data Prep
 
 ---
 
-## 🗓️ Week 16 (April 14–21, 2025)
+## 🗓️ Friday 2025-04-25
 
-### 🎯 Weekly Quest Plan
+### ✅ MythosQuest Phase 3 Completion
 
-| Quest | Type | Goal | Reward |
-| --- | --- | --- | --- |
-| DeepLearning.AI Week 4 | Learning | Finish W4 videos + assignments | +5 Backprop Mastery XP |
-| MythosQuest Minimal Deployment | Project | Deploy MVP on VPS | +6 Worldbuilder XP |
-| CV Polish & Job Targeting | Career | Refine CV + apply | +3 Confidence |
-| Spellweaver Polish | UX | Polish spell UI + hover states | +4 UX Ritualist XP |
-| Activation Codex Upload | Knowledge | Add new entry | +2 Clarity Bonus |
-| Share BittyGPT on LinkedIn | Visibility | Announce site + apps | +2 Recognition XP |
+- Deployed MythosQuest live at [https://mythosquest.bittygpt.com](https://mythosquest.bittygpt.com)
+- Finished user login system and dynamic settings page
+- Streamed AI responses reliably using OpenRouter and Cosmos models
+- Secured app with Traefik and Let's Encrypt SSL
+- Fixed session context and background streaming issues
+- Wrote full MythosQuest Devlog summarizing Phase 3
 
+---
 
-### 🧠 April 14 – Classical AI Search Fundamentals (CS50 AI)
-
-**Goal**:  
-Strengthen foundational understanding of classical AI search strategies, consolidate knowledge of BFS, DFS, Greedy Best-First, A*, and game tree algorithms.
-
-**Focus Areas**:
-- Revisited **search problem structure**: initial state, actions, transition model, goal test, path cost.
-- Compared **BFS vs DFS** for completeness, optimality, and use cases.
-- Studied **Greedy Best-First Search** and **A\*** as heuristic-guided strategies.
-- Explored **Minimax**, **Alpha-Beta Pruning**, and **Depth-Limited Minimax** for adversarial game AI.
-
-**Outcome**:
-- Created a structured Knowledge Item: *Search Algorithms in AI*, summarizing all explored methods with examples, pros/cons, and application contexts.
-- Recognized parallels between ML optimization and classical search cost models.
-
-**Personal Insight**:  
-Taking a step back from deep learning to refresh classical foundations was energizing and clarifying. The CS50 lecture format offered a comfortable pace for knowledge reinforcement, while the connections to prior logistic regression work made the material feel intuitive.
-
+> ✨ "Today, MythosQuest stopped being a prototype and became a real foundation."

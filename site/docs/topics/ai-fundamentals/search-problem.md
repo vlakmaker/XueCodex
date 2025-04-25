@@ -1,5 +1,5 @@
 ---
-id: search-problem
+id: "search-problem"
 title: Search Problem Summary
 tags: [ai-fundamentals, search, beginner]
 ---
