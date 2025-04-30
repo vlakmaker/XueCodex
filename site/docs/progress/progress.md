@@ -79,31 +79,4 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 # Log
 
-## 🗓️ Tuesday 2025-04-22
 
-### ✅ MythosQuest Refactor and CI/CD Foundation
-
-- Refactored MythosQuest backend into modular Flask structure
-- Replaced SQLite raw queries with full SQLAlchemy ORM
-- Implemented Fernet encryption for secure API key storage
-- Modularized settings, game logic, and authentication
-- Upgraded Oracle server for production Docker hosting
-- Set up GitHub Actions workflow for CI/CD
-- Finished IBM Generative AI and LLMs: Architecture & Data Prep
-
----
-
-## 🗓️ Friday 2025-04-25
-
-### ✅ MythosQuest Phase 3 Completion
-
-- Deployed MythosQuest live at [https://mythosquest.bittygpt.com](https://mythosquest.bittygpt.com)
-- Finished user login system and dynamic settings page
-- Streamed AI responses reliably using OpenRouter and Cosmos models
-- Secured app with Traefik and Let's Encrypt SSL
-- Fixed session context and background streaming issues
-- Wrote full MythosQuest Devlog summarizing Phase 3
-
----
-
-> ✨ "Today, MythosQuest stopped being a prototype and became a real foundation."
