@@ -45,10 +45,9 @@ The **decoder** generates the output **one token at a time**, using the encoded 
 Task: Translate `"The cat sat on the mat."` to French
 
 Decoder starts with:
-- [<sos>] (start of sentence token)
+- [`<sos>`] (start of sentence token)
 - Predicts "Le"
 - Feeds "Le" back in, predicts "chat"
-- Continues: "Le chat s'est assis sur le tapis."
 
 > 🔁 It’s **autoregressive**: each output depends on previous outputs + the encoded input.
 
