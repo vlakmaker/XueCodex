@@ -1,9 +1,8 @@
 ---
 id: "encoder-decoder"
-title: Encoders, Decoders, and Attention 
+title: Encoders, Decoders, and Attention
 tags: [encoder, decoder, neural networks]
 ---
-
 # 🧠 Encoders, Decoders, and Attention 
 
 ---

@@ -3,7 +3,6 @@ id: "self-attention"
 title: "What Is Self-Attention?"
 tags: [transformers, nlp, neural networks]
 ---
-
 # 🔍 What Is Self-Attention?
 
 Self-attention allows a model to look at **all the other words in a sentence** (or a document, or code...) and **decide how important each of them is** for understanding a particular word.

@@ -3,7 +3,6 @@ id: "transformer-architecture"
 title: "Transformer Architecture "
 tags: [transformers, nlp, neural networks]
 ---
-
 #  Transformer Architecture 
 
 ---

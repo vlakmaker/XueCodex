@@ -3,8 +3,6 @@ id: "embeddings"
 title: What Are Embeddings
 tags: [embeddings, word2vec, neural networks]
 ---
-
-
 # 🧠 What Are Embeddings?
 
 **Embeddings** are how we turn symbolic data (like words, sentences, images, or even users) into **vectors of numbers** — in a way that captures **meaning, similarity, or structure**.

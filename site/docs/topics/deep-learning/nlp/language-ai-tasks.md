@@ -3,7 +3,6 @@ id: "language-ai-tasks"
 title: "Language AI Tasks (NLP Task Overview)"
 tags: [nlp, neural networks, words]
 ---
-
 # 🔤 Language AI Tasks (NLP Task Overview)
 
 ## 1. 🧠 Understanding (Analysis)

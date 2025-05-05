@@ -3,7 +3,6 @@ id: "bag-of-words"
 title: "Language as a Bag-of-Words"
 tags: [nlp, neural networks, words]
 ---
-
 # 🧺 Language as a Bag-of-Words
 
 **Conceptual Walkthrough with “My cat is cute”**

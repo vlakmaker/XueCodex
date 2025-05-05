@@ -3,7 +3,6 @@ id: "transformer-attention"
 title: "Transformers and Attention – Explained with Visuals"
 tags: [transformers, nlp, neural networks]
 ---
-
 # 🤖 Transformers and Attention – Explained with Visuals
 
 ---
