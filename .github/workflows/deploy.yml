@@ -19,11 +19,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.ORACLE_SSH_PRIVATE_KEY }}
 
-      - name: ✨ Deploy to Oracle via SSH
+      - name: Deploy to Oracle server
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.ORACLE_USER }}@${{ secrets.ORACLE_HOST }} << 'EOF'
-            cd /home/${{ secrets.ORACLE_USER }}/xuecodex
-            git pull origin main
-            docker compose -f docker-compose.yml down
-            docker compose -f docker-compose.yml up -d --build
-          EOF
+        ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          set -e  # exit on error
+          cd /home/ubuntu/XueCodex  # ✅ Correct case
+          git pull origin main      # ✅ Ensure repo is updated
+          docker compose -f docker-compose.rag.yml down || true  # ✅ Stop old one
+          docker compose -f docker-compose.rag.yml up --build -d
+        EOF
