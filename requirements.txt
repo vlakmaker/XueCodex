@@ -1,8 +1,32 @@
+# Core framework
 fastapi
 uvicorn
+
+# Vector storage & embedding
+faiss-cpu
 langchain
 langchain-community
 sentence-transformers
 transformers
-faiss-cpu
-python-dotenv
+huggingface-hub
+
+# Document loaders
+markdown  # for proper file parsing
+beautifulsoup4  # used internally by MarkdownLoader
+
+# Embedding model
+torch
+tiktoken  # for token counting with OpenAI-like models
+
+# Pydantic
+pydantic
+pydantic-settings
+
+# HTTP & async handling
+httpx
+aiohttp
+
+# CORS and error handling
+python-multipart  # in case you expand for file uploads
+requests
+openai

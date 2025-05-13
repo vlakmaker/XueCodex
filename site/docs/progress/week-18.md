@@ -1,8 +1,8 @@
 ---
-id: week-18
+id: "week-18"
 title: Week 18
 sidebar_label: week 18
-slug: /progress/week-18
+slug: "/progress/week-18"
 ---
 # 📈 AI Learning Progress
 

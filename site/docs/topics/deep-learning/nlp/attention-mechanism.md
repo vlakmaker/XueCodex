@@ -3,8 +3,6 @@ id: "attentoin-mechanism"
 title: "Attention Mechanism — A Gentle but Deep Dive"
 tags: [transformers, nlp, neural networks]
 ---
-
-
 # 🧠 Attention Mechanism — A Gentle but Deep Dive
 
 ## 1️⃣ What Is the Attention Mechanism and Why Is It Important?
