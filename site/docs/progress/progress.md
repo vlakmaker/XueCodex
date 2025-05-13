@@ -80,7 +80,70 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 # Log
 
+### 🗓️ Progress Log — 12 May 2025
 
+### 🎯 Focus Areas
+
+- ✅ Reviewed **Attention Mechanism** and **Self-Attention**
+- ✅ Deep dive into **Transformer Encoder Architecture**
+- ✅ Clarified **Multi-Head Attention**, `QKV` flows, and Softmax
+- ✅ Completed transcription walkthroughs for:
+    - Positional Encoding
+    - Attention → Transformers
+    - Transformers for Classification (Encoder-based)
+- ✅ Consolidated confusion around **dot product, transpose, softmax, and scaling**
+- ✅ Created or updated Knowledge Items:
+    - Attention Mechanism
+    - Self-Attention (Expanded)
+    - From Attention to Transformers
+    - Transformer Encoders for Classification
+
+### 🧠 Key Realizations
+
+- **Self-attention** made more sense once broken down step-by-step from raw Q, K, V projections to final token output.
+- **Transpose** became clearer after understanding it as a matrix shape realignment for compatibility in dot products.
+- **Softmax** plays a crucial role in normalizing attention weights.
+- **Multi-head attention** = parallel perspectives on context.
+- Still feel a bit wobbly around LSTMs, but more confident with attention-based models.
+
+### 🧱 Building Blocks Added to XueCodex
+
+- `/nlp/attention-mechanism`
+- `/nlp/self-attention` (rewritten & expanded)
+- `/nlp/from-attention-to-transformers`
+- `/nlp/transformers-for-classification`
+
+### 🧪 What's Next?
+
+- Implementing attention layers in PyTorch
+- Begin RAG search bar integration into XueCodex frontend
+- Optional revisit: LSTM & GRU concepts in simpler code-level terms
+- Continue course: *Generative AI with Transformers*
+
+### 🗓️ 2025-05-13 — Full API Integration & Deployment Pipeline Stabilization
+
+**Milestone:** The RAG search system for XuéCodex is now fully operational and deployed via containerized API at `https://api.xuecodex.tech`, with automated deployment pipelines in place.
+
+### ✅ Key Highlights:
+
+- **Created a dedicated FastAPI backend** with:
+    - Live semantic search powered by FAISS and `bge-small-en-v1.5` embeddings
+    - RetrievalQA pipeline using OpenRouter + Mistral 7B
+    - Support for real-time document embedding from `site/docs`
+- **Resolved major blockers**, including:
+    - Missing optional dependencies (`unstructured[md]`, `libmagic`) for Markdown parsing
+    - Container import errors with outdated `langchain_community` components
+    - TLS cert issues via Traefik + Docker labels
+    - Missing `openai` dependency (required internally even with OpenRouter)
+- **Reorganized GitHub workflows** into:
+    - `deploy-api.yml`: Handles backend container deployment via Traefik
+    - `deploy-docs.yml`: Separately builds and publishes the Docusaurus site to GitHub Pages
+
+### 🔁 Next Steps:
+
+- Fine-tune UX for search result presentation on the frontend
+- Extend context chunking support and memory options in the backend
+- Add more test cases to validate API reliability and document coverage
 
 ---
 

@@ -1,0 +1,38 @@
+name: Deploy Docs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: 📦 Install Dependencies
+        run: npm install
+        working-directory: ./site
+
+      - name: 🏗️ Build Docusaurus Site
+        run: npm run build
+        working-directory: ./site
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/build
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: "Deploy docs: ${{ github.event.head_commit.message }}"
