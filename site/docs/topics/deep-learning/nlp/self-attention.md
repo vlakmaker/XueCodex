@@ -3,6 +3,7 @@ id: "self-attention"
 title: "What Is Self-Attention?"
 tags: [transformers, nlp, neural networks]
 ---
+
 # 🔍 What Is Self-Attention?
 
 Self-attention allows a model to look at **all the other words in a sentence** (or a document, or code...) and **decide how important each of them is** for understanding a particular word.
@@ -10,81 +11,124 @@ Self-attention allows a model to look at **all the other words in a sentence** (
 Imagine reading:
 
 > "The dog chased the llama because it was fast."
-> 
 
-You need to know:
+You need to ask:  
+🧠 "Does *it* refer to *the dog* or *the llama*?"  
 
-> Does “it” refer to the dog or the llama?
-> 
-
-That’s where **self-attention** steps in. It weighs **“it”’s** relation to **dog** and **llama** and assigns a *relevance score*.
+That’s where **self-attention** comes in. It helps assign *relevance scores* between tokens so the model can understand these dependencies.
 
 ---
 
-### 🧠 How It Works: Step-by-Step (with Slides)
+## 🧠 How It Works: Step-by-Step
 
-### 1. **Projection into Q, K, V (Queries, Keys, Values)**
+### 1. **Projection into Q, K, V (Query, Key, Value)**
 
-Every input token is turned into **three vectors** using learned matrices:
+Every token in the input sequence is passed through three learned linear transformations:
 
-- **Query (Q)**: What are we looking for?
-- **Key (K)**: What do we have to offer?
-- **Value (V)**: What is the actual content we want to share?
+- **Query (Q):** What am I looking for?
+- **Key (K):** What does each word offer?
+- **Value (V):** What content do I retrieve if a match is found?
 
-All of this happens in parallel for every word in a sentence.
-
-### 2. **Computing Attention Scores (aka Relevance)**
-
-Let’s say the model is processing the word **“it”**.
-
-- “It” becomes a **Query** vector.
-- Every other word becomes a **Key** vector.
-- The dot product of Query × Key gives a **score**: How relevant is this word to “it”?
-- Apply softmax = normalized relevance weights.
-
-These scores are then used to **weight the Value vectors** of each word. Words that are more relevant contribute more to the final output vector.
-
-### 3. **Weighted Sum → Output**
-
-The model multiplies each Value by its attention weight and **adds them all together** to form an output vector that is **context-aware**.
-
-So the vector for “it” now **knows what “it” is referring to.**
+Each token gets its own Q, K, and V vectors.
 
 ---
 
-### 🔁 Multi-Head Attention
+### 2. **Attention Scores via Dot Product**
 
-One attention head may capture **subject-verb** relationships. Another may look at **noun-adjective** dependencies. To cover multiple types of patterns, we split attention into **multiple heads**—each learns a different type of relationship.
+To compute how much *attention* one word pays to others:
 
-Each head does its own QKV magic, and then their outputs are **concatenated and linearly transformed**.
-
----
-
-### 🌀 Efficiency: Sparse & Grouped Attention
-
-As sequences get longer, computing attention becomes expensive.
-
-### 🧠 Grouped Attention
-
-You can **group** attention heads to reuse the same Keys/Values and save computation. Each group has its own Queries but shares context. More efficient, almost no loss in performance.
-
-### 🌌 Sparse Attention
-
-Full attention = quadratic cost (every token attends to every other). Sparse attention = look only at nearby or important tokens.
-
-Example:
-
-- **Global**: Attend to all previous tokens (slow).
-- **Local**: Only attend to nearby tokens (like a sliding window).
-- **Strided/Fix**: Attend in patterns (like every 3rd token or critical anchors).
-
-These optimizations help scale to long documents (e.g., 100K tokens) while keeping costs manageable.
+1. Compute dot product between **Q** of the current word and **K** of all words.
+2. Scale the result by the square root of the key dimension \( \sqrt{d_k} \).
+3. Apply **softmax** to turn scores into weights.
+4. Multiply weights with **V** to get the final contextual embedding.
 
 ---
 
-### 🤖 Summary: Why Self-Attention Is Powerful
+### 📐 Full Formula
 
-- Understands context across a whole sequence (not just neighbors like RNNs).
-- Parallelizable, unlike sequential RNNs.
-- Can be made efficient with grouped or sparse attention.
-- Each head learns different linguistic or structural patterns.
+\[
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\]
+
+- \( Q \in \mathbb{R}^{n \times d_k} \)
+- \( K \in \mathbb{R}^{n \times d_k} \)
+- \( V \in \mathbb{R}^{n \times d_v} \)
+- \( n \) = sequence length, \( d_k \) = key/query dim, \( d_v \) = value dim
+
+The result is a matrix of **contextualized embeddings**: one for each word, now aware of its neighbors.
+
+---
+
+## 💡 Why Divide by √d_k?
+
+Without scaling, large dot product values would cause the **softmax** to become too peaky, resulting in near one-hot distributions.  
+The division stabilizes gradients and ensures better learning.
+
+---
+
+## 🧪 Simple Conceptual Example
+
+For a 3-token input:  
+Tokens = `"I"`, `"love"`, `"cats"`
+
+Each token gets Q, K, V (vectors like `[0.1, 0.3]`)
+
+1. Compute `Q × Kᵀ` → similarity scores
+2. Apply `softmax` → attention weights (e.g., `[0.2, 0.3, 0.5]`)
+3. Multiply by V → weighted sum → contextual embedding for token
+
+---
+
+## 🌀 Multi-Head Attention
+
+Instead of just one set of Q/K/V projections, the model uses multiple “heads”:
+
+- Each head learns different relationships (e.g., grammar, meaning)
+- The outputs of all heads are **concatenated and linearly transformed**
+
+This lets the model capture different types of context simultaneously.
+
+---
+
+## 🧭 Why Self-Attention Matters
+
+- 💬 Understands **global relationships**, not just nearby words
+- ⚡ Fully **parallelizable** (unlike RNNs)
+- 🧠 Easily scaled up (transformers can handle huge sequences)
+- 🔁 Enables **contextual embeddings** — words are represented *in context*
+
+---
+
+## ⏱️ Positional Encoding
+
+Because attention alone is order-agnostic, we inject **position info**:
+
+- 🔁 **Sinusoidal positional encoding** (Transformer paper)
+- 🧠 **Learnable positional embeddings** (BERT, GPT)
+
+These are **added to the token embeddings** before attention so the model knows word order.
+
+---
+
+## 🧪 Mini Practicum: Predicting “hate” from “not like”
+
+Input: `"not like"`  
+Model should predict: `"hate"`
+
+Steps:
+1. Embed tokens → `[x_not, x_like]`
+2. Compute `Q = x × W_Q`, `K = x × W_K`, `V = x × W_V`
+3. Get `attention_weights = softmax(Q × Kᵀ / √d_k)`
+4. Compute `H' = attention_weights × V`
+5. Final output: `H = H' × W_o`
+6. Pass through linear classifier → vocabulary → predict `"hate"`
+
+---
+
+## 🤓 Summary
+
+Self-attention lets a model:
+- Compare all tokens with all others via dot product
+- Learn long-range dependencies
+- Replace sequential memory with direct *contextual lookup*
+- Power the core of the Transformer architecture

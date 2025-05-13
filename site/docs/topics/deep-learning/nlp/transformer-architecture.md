@@ -124,5 +124,3 @@ This process repeats token-by-token during generation.
 | LM Head           | Predicts next word/token               |
 
 ---
-
-Would you like me to add an illustrated cheat sheet or printable study card for this as well?
