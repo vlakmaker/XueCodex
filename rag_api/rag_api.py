@@ -3,11 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceBgeEmbeddings
-from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_community.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-from fastapi import HTTPException  # make sure this is imported
 import os
 
 app = FastAPI()
@@ -15,7 +14,7 @@ app = FastAPI()
 # 🌍 CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all for dev; tighten later
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,7 +27,11 @@ class AskRequest(BaseModel):
 
 # 📚 Load and embed docs once
 print("🔎 Loading and embedding documents...")
-loader = DirectoryLoader("./site/docs", glob="**/*.md")
+loader = DirectoryLoader(
+    path="./site/docs",
+    glob="**/*.md",
+    loader_cls=TextLoader
+)
 docs = loader.load()
 
 embedding_model = HuggingFaceBgeEmbeddings(

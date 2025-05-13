@@ -3,8 +3,6 @@ id: "Multi-head attention"
 title: "Multihead Attention"
 tags: [transformers, nlp, neural networks]
 ---
-
-
 ## 🧠 1. What Is Scaled Dot-Product Attention?
 
 At its core, attention is about:
