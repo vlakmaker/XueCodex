@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  xuecodex-rag:
+    image: python:3.10-slim
+    container_name: xuecodex-rag
+    restart: always
+    volumes:
+      - ./site/docs:/app/site/docs # ✅ Mount your Markdown docs folder
+      - ./rag_api:/app # ✅ Mount the folder (not file) where rag_api.py lives
+      - ./requirements.txt:/app/requirements.txt # ✅ Mount your requirements file
+    working_dir: /app
+    command: bash -c "pip install -r requirements.txt && uvicorn rag_api:app --host 0.0.0.0 --port 8000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.xuerag.rule=Host(`api.xuecodex.tech`)"
+      - "traefik.http.routers.xuerag.entrypoints=websecure"
+      - "traefik.http.routers.xuerag.tls.certresolver=letsencrypt"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

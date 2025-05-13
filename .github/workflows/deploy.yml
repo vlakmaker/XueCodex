@@ -1,41 +1,29 @@
-name: Deploy to xuecodex.tech
+name: Deploy XueCodex RAG API to Oracle Server
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4 # Use v4 for latest features/fixes
+      - name: ✅ Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js 🧠
-        uses: actions/setup-node@v4 # Use v4
+      - name: ⚖️ Set up SSH key
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          node-version: 18
-          cache: 'npm' # Enable npm caching
-          cache-dependency-path: site/package-lock.json # Specify lock file location
+          ssh-private-key: ${{ secrets.ORACLE_SSH_PRIVATE_KEY }}
 
-      - name: Install Dependencies 📦
-        run: npm install
-        working-directory: ./site
-
-      - name: Build Docusaurus Site 🏗️
-        run: npm run build
-        working-directory: ./site
-
-      # --- NEW DEPLOY STEP ---
-      - name: Deploy to GitHub Pages 🚀
-        uses: peaceiris/actions-gh-pages@v4 # Use the dedicated action v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # This is the directory Docusaurus builds to within the 'site' folder
-          publish_dir: ./site/build 
-          # Optional: Configure commit user
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          # Optional: commit message
-          commit_message: ${{ github.event.head_commit.message }} # Use the commit message that triggered the workflow
+      - name: ✨ Deploy to Oracle via SSH
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.ORACLE_USER }}@${{ secrets.ORACLE_HOST }} << 'EOF'
+            cd /home/${{ secrets.ORACLE_USER }}/xuecodex
+            git pull origin main
+            docker compose -f docker-compose.yml down
+            docker compose -f docker-compose.yml up -d --build
+          EOF
