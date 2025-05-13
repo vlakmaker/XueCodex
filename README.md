@@ -1,6 +1,6 @@
 # 🧠 XuéCodex
 
-**The Living Book of Learning** — a personal chronicle of my journey through artificial intelligence, experimentation, and applied creativity.
+**The Living Book of Learning** — my personal chronicle of my journey through artificial intelligence, experimentation, and applied creativity.
 
 This codex contains daily reflections, project logs, skill assessments, and concept deep dives as I explore the evolving landscape of AI — not just as a user, but as a builder, learner, and strategist.
 
