@@ -1,45 +1,42 @@
-name: Deploy XueCodex RAG API to Oracle Server
+name: Deploy XueCodex RAG API
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout code
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔒 Set up SSH Agent
+      - name: 🔐 Set up SSH agent
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
 
-      - name: 🚀 Deploy to Oracle Server
+      - name: 🛡️ Add server to known_hosts
         run: |
-          echo "Adding server to known_hosts..."
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-          echo "Connecting to server..."
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            echo "Navigating to deploy directory..."
+      - name: 🚀 Deploy to Oracle server
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
+            echo "📁 Navigating to deploy directory..."
             cd /home/ubuntu/XueCodex || exit 1
 
-            echo "Resetting any local changes..."
+            echo "🔄 Resetting local changes..."
             git reset --hard HEAD
             git pull origin main || exit 1
 
-            echo "Stopping existing Docker containers..."
-            docker compose -f docker-compose.rag.yml down
-
-            echo "Building and starting new containers..."
+            echo "🐳 Rebuilding and restarting Docker..."
             docker compose -f docker-compose.rag.yml up --build -d || exit 1
 
-            echo "Cleaning up old Docker images..."
+            echo "🧹 Cleaning up old Docker images..."
             docker image prune -af
             docker builder prune -af
 
-            echo "✅ Deployment complete."
+            echo "✅ XueCodex RAG API deployed successfully!"
           EOF
