@@ -52,7 +52,7 @@ You can now query the Codex via a live Retrieval-Augmented Generation (RAG) API,
 
 ### 👉 Try it live:
 
-[https://api.xuecodex.tech](https://api.xuecodex.tech/)
+[https://xuecodex.tech/rag-search](https://xuecodex.tech/rag-search)
 
 Ask a question like:
 
