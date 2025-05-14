@@ -69,6 +69,11 @@ const config = {
           label: 'Docs',
         },
         {
+          href: 'https://xuecodex.tech/rag-search',
+          label: 'Rag Search',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/vlakmaker/XueCodex',
           label: 'GitHub',
           position: 'right',
