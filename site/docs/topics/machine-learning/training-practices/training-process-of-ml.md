@@ -87,7 +87,7 @@ Once the model is trained, it can classify new images:
 ```python
 img = PILImage.create('new_image.jpg')
 is_cat,_,probs = learn.predict(img)
-print(f"Is this a cat?: {is_cat}")
+print(f"Is this a cat?: $is_cat$")
 print(f"Probability it's a cat: {probs[1].item():.6f}")
 
 ```

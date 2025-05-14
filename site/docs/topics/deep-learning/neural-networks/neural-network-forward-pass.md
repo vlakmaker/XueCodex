@@ -93,9 +93,9 @@ $$
 
 Where:
 
-- $W^{[1]} \in \mathbb{R}^{4 \times 3}$  
-- $x \in \mathbb{R}^{3 \times 1}$  
-- $b^{[1]} \in \mathbb{R}^{4 \times 1}$
+- $W^{[1]} \in \mathbb{R}^$4 \times 3$$  
+- $x \in \mathbb{R}^$3 \times 1$$  
+- $b^{[1]} \in \mathbb{R}^$4 \times 1$$
 
 ### Step 2: Output Layer
 
@@ -106,9 +106,9 @@ $$
 
 Where:
 
-- $W^{[2]} \in \mathbb{R}^{1 \times 4}$  
-- $a^{[1]} \in \mathbb{R}^{4 \times 1}$  
-- $b^{[2]} \in \mathbb{R}^{1 \times 1}$
+- $W^{[2]} \in \mathbb{R}^$1 \times 4$$  
+- $a^{[1]} \in \mathbb{R}^$4 \times 1$$  
+- $b^{[2]} \in \mathbb{R}^$1 \times 1$$
 
 ---
 

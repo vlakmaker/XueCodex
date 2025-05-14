@@ -12,7 +12,7 @@ At its core, attention is about:
 
 The **scaled dot-product attention** formula is:
 
-Attention(Q,K,V)=softmax(QKTdk)V\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+Attention(Q,K,V)=softmax(QKTdk)V\text{Attention}(Q, K, V) = \text{softmax}\left(\frac$QK^T${\sqrt$d_k$}\right)V
 
 Attention(Q,K,V)=softmax(dk
 
@@ -26,7 +26,7 @@ QKT)V
 - `dₖ` = dimension of the key vector
 - `softmax(...)` turns similarity scores into probabilities
 
-The scaling by dk\sqrt{d_k}dk ensures that the dot products don’t get too large, which would make softmax overly peaky (one word gets nearly all attention).
+The scaling by dk\sqrt$d_k$dk ensures that the dot products don’t get too large, which would make softmax overly peaky (one word gets nearly all attention).
 
 ---
 

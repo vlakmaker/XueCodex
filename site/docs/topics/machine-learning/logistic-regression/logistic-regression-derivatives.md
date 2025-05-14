@@ -50,7 +50,7 @@ We now work **backwards** to calculate how much each part contributed to the err
 ### Step 1: From Loss to Sigmoid Output
 
 ```
-\frac{\partial \mathcal{L}}{\partial a} = -\frac{y}{a} + \frac{1 - y}{1 - a}
+\frac{\partial \mathcal{L}}$\partial a$ = -\frac{y}{a} + \frac{1 - y}{1 - a}
 ```
 
 This tells us how much the loss changes when `a` changes.
@@ -58,13 +58,13 @@ This tells us how much the loss changes when `a` changes.
 ### Step 2: From Sigmoid Output to z
 
 ```
-\frac{\partial a}{\partial z} = a(1 - a)
+\frac$\partial a$$\partial z$ = a(1 - a)
 ```
 
 This is the derivative of the sigmoid function. So:
 
 ```
-\frac{\partial \mathcal{L}}{\partial z} = \frac{\partial \mathcal{L}}{\partial a} \cdot \frac{\partial a}{\partial z}
+\frac{\partial \mathcal{L}}$\partial z$ = \frac{\partial \mathcal{L}}$\partial a$ \cdot \frac$\partial a$$\partial z$
 ```
 
 ### Step 3: From z to Weights and Bias
@@ -72,17 +72,17 @@ This is the derivative of the sigmoid function. So:
 Since `z = w_1 x_1 + w_2 x_2 + b`, we have:
 
 ```
-\frac{\partial z}{\partial w_1} = x_1\qquad
-\frac{\partial z}{\partial w_2} = x_2\qquad
-\frac{\partial z}{\partial b} = 1
+\frac$\partial z$$\partial w_1$ = x_1\qquad
+\frac$\partial z$$\partial w_2$ = x_2\qquad
+\frac$\partial z$$\partial b$ = 1
 ```
 
 So:
 
 ```
-\frac{\partial \mathcal{L}}{\partial w_1} = \frac{\partial \mathcal{L}}{\partial z} \cdot x_1
-\frac{\partial \mathcal{L}}{\partial w_2} = \frac{\partial \mathcal{L}}{\partial z} \cdot x_2
-\frac{\partial \mathcal{L}}{\partial b} = \frac{\partial \mathcal{L}}{\partial z}
+\frac{\partial \mathcal{L}}$\partial w_1$ = \frac{\partial \mathcal{L}}$\partial z$ \cdot x_1
+\frac{\partial \mathcal{L}}$\partial w_2$ = \frac{\partial \mathcal{L}}$\partial z$ \cdot x_2
+\frac{\partial \mathcal{L}}$\partial b$ = \frac{\partial \mathcal{L}}$\partial z$
 ```
 
 ---
@@ -92,15 +92,15 @@ So:
 We update our weights and bias using these gradients:
 
 ```
-w_1 := w_1 - \alpha \cdot \frac{\partial \mathcal{L}}{\partial w_1}
+w_1 := w_1 - \alpha \cdot \frac{\partial \mathcal{L}}$\partial w_1$
 ```
 
 ```
-w_2 := w_2 - \alpha \cdot \frac{\partial \mathcal{L}}{\partial w_2}
+w_2 := w_2 - \alpha \cdot \frac{\partial \mathcal{L}}$\partial w_2$
 ```
 
 ```
-b := b - \alpha \cdot \frac{\partial \mathcal{L}}{\partial b}
+b := b - \alpha \cdot \frac{\partial \mathcal{L}}$\partial b$
 ```
 
 Where `\alpha` is the **learning rate** (controls the step size).

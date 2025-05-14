@@ -1,0 +1,172 @@
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 31:
+    a = \sigma(z) = \frac{1}{1 + e^{-z}}
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 39:
+    \mathcal{L}(a, y)
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 53:
+    \frac{\partial \mathcal{L}}$\partial a$ = -\frac{y}{a} + \frac{1 - y}{1 - a}
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 67:
+    \frac{\partial \mathcal{L}}$\partial z$ = \frac{\partial \mathcal{L}}$\partial a$ \cdot \frac$\partial a$$\partial z$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 83:
+    \frac{\partial \mathcal{L}}$\partial w_1$ = \frac{\partial \mathcal{L}}$\partial z$ \cdot x_1
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 84:
+    \frac{\partial \mathcal{L}}$\partial w_2$ = \frac{\partial \mathcal{L}}$\partial z$ \cdot x_2
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 85:
+    \frac{\partial \mathcal{L}}$\partial b$ = \frac{\partial \mathcal{L}}$\partial z$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 95:
+    w_1 := w_1 - \alpha \cdot \frac{\partial \mathcal{L}}$\partial w_1$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 99:
+    w_2 := w_2 - \alpha \cdot \frac{\partial \mathcal{L}}$\partial w_2$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-derivatives.md, line 103:
+    b := b - \alpha \cdot \frac{\partial \mathcal{L}}$\partial b$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression.md, line 28:
+    \hat{y} = \sigma(w^T x + b)
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression.md, line 41:
+    \sigma(z) = \frac{1}{1 + e^{-z}}
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 16:
+    ### Predicted Output ($\hat{y}$):
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 17:
+    - The model predicts the probability that a given input $x^{(i)}$ belongs to the **positive class** (usually class 1).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 21:
+    \hat{y} = \sigma(w^T x^{(i)} + b)
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 24:
+    Where $w^T x^{(i)} + b$ is the weighted sum of the features (input data).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 26:
+    ### True Output ($y^{(i)}$):
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 27:
+    - This is the **actual value** from the data. For binary classification, $y^{(i)}$ is either **0** or **1**.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 30:
+    - The **loss function** calculates how far the predicted value ($\hat{y}$) is from the actual value ($y$).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 34:
+    L(\hat{y}, y) = - [ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) ]
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 37:
+    - If $y = 1$ (the true class is 1), we want to **maximize** $\hat{y}$ (i.e., make the model confident in predicting 1). So, the loss is calculated as $-\log(\hat{y})$.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 38:
+    - If $y = 0$ (the true class is 0), we want to **minimize** $\hat{y}$ (i.e., make the model confident in predicting 0). So, the loss is calculated as $-\log(1 - \hat{y})$.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 45:
+    J(w, b) = \frac{1}{m} \sum_$i=1$^{m} L(\hat{y}^{(i)}, y^{(i)})
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 50:
+    - $L(\hat{y}^{(i)}, y^{(i)})$ is the loss for each example $i$.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 54:
+    ### Predicted Output ($\hat{y}$) is calculated using the sigmoid function:
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 58:
+    \sigma(z) = \frac{1}{1 + e^{-z}}
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 66:
+    - We want $\hat{y}$ to be large (close to **1**).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 67:
+    - The loss is $-\log(\hat{y})$. If $\hat{y}$ is close to 1, the loss will be small, meaning the prediction is correct.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 70:
+    - We want $\hat{y}$ to be small (close to **0**).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 71:
+    - The loss is $-\log(1 - \hat{y})$. If $\hat{y}$ is close to 0, the loss will be small, meaning the prediction is correct.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 74:
+    - The **cost function** averages the loss over all examples. The goal is to **minimize the cost**, meaning we want to reduce the difference between the predicted values ($\hat{y}$) and the actual values ($y$).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 83:
+    - **Logistic regression** uses **log loss** (binary cross-entropy) to calculate how far off the predicted probabilities ($\hat{y}$) are from the actual labels ($y$).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 95:
+    ### Step 1: Predicted Probability ($\hat{y}$)
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 109:
+    L(\hat{y}, y) = - [ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) ]
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 130:
+    J(w, b) = \frac{1}{2} \left( 0.2231 + 0.2231 \right) = 0.2231
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 139:
+    - **Email 1**: Predicted probability $\hat{y} = 0.9$ (predicted as spam with 90% certainty), but the true label is **0** (not spam).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 140:
+    - **Email 2**: Predicted probability $\hat{y} = 0.1$ (predicted as not spam with 10% certainty), but the true label is **1** (spam).
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/logistic-regression/logistic-regression-cost-function.md, line 156:
+    J(w, b) = \frac{1}{2} \left( 2.3026 + 2.3026 \right) = 2.3026
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 48:
+    ### Step 1: $\frac{dJ}{dv} = 3$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 51:
+    J = 3v \Rightarrow \text{If } v \uparrow 1, J \uparrow 3
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 54:
+    ### Step 2: $\frac{dv}{du} = 1$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 57:
+    v = a + u \Rightarrow \text{If } u \uparrow 1, v \uparrow 1
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 60:
+    ### Step 3: $\frac{dJ}{du} = \frac{dJ}{dv} \times \frac{dv}{du} = 3 \times 1 = 3$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 66:
+    ### 1. $\frac{dJ}{da}$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 67:
+    - $v = a + u \Rightarrow \frac{dv}{da} = 1$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 68:
+    - $\frac{dJ}{da} = \frac{dJ}{dv} \times \frac{dv}{da} = 3 \times 1 = 3$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 70:
+    ### 2. $\frac{dJ}{db}$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 71:
+    - $u = b \times c \Rightarrow \frac{du}{db} = c = 2$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 72:
+    - $\frac{dJ}{db} = \frac{dJ}{du} \times \frac{du}{db} = 3 \times 2 = 6$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 74:
+    ### 3. $\frac{dJ}{dc}$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 75:
+    - $u = b \times c \Rightarrow \frac{du}{dc} = b = 3$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 76:
+    - $\frac{dJ}{dc} = \frac{dJ}{du} \times \frac{du}{dc} = 3 \times 3 = 9$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 84:
+    | $a$   | $\frac{dJ}{da} = 3$ |
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 85:
+    | $b$   | $\frac{dJ}{db} = 6$ |
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/core-maths/computation-derivatives.md, line 86:
+    | $c$   | $\frac{dJ}{dc} = 9$ |
+[⚠️ Warning] Potential MDX expression in site/docs/topics/machine-learning/training-practices/training-process-of-ml.md, line 91:
+    print(f"Probability it's a cat: {probs[1].item():.6f}")
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/sequence-models/llm-ngram-nn.md, line 75:
+    - Predict next word `w_t` given: `w_{t-n+1}, ..., w_{t-1}`
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/sequence-models/llm-ngram-nn.md, line 99:
+    - You concatenate embeddings: `embedding(w_{t-2}) + embedding(w_{t-1})`
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/nlp/multi-head-attention.md, line 15:
+    Attention(Q,K,V)=softmax(QKTdk)V\text{Attention}(Q, K, V) = \text{softmax}\left(\frac$QK^T${\sqrt$d_k$}\right)V
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/nlp/self-attention.md, line 49:
+    \text{Attention}(Q, K, V) = \text{softmax}\left(\frac$QK^T${\sqrt$d_k$}\right)V
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/nlp/self-attention.md, line 52:
+    - $Q \in \mathbb{R}^$n \times d_k$$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/nlp/self-attention.md, line 53:
+    - $K \in \mathbb{R}^$n \times d_k$$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/nlp/self-attention.md, line 54:
+    - $V \in \mathbb{R}^$n \times d_v$$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 35:
+    - Pass it through a **sigmoid** function to get a probability $\hat{y}$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 44:
+    Then compare $a$ with the label $y$ using a loss function $\mathcal{L}(a, y)$, and adjust $w, b$ with backpropagation.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 52:
+    It's like passing your ingredients (inputs) through a magical kitchen (layers of neurons), mixing everything together with weights and biases, and applying secret sauces (activation functions) until you get a tasty final dish: a prediction $\hat{y}$.
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 62:
+    - **Output layer**: Final prediction $\hat{y}$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 66:
+    - $a^{[0]} = x$: Input vector  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 67:
+    - $W^{[l]}$: Weight matrix for layer $l$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 68:
+    - $b^{[l]}$: Bias vector for layer $l$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 69:
+    - $z^{[l]} = W^{[l]} a^{[l-1]} + b^{[l]}$: Linear combination  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 70:
+    - $a^{[l]} = \sigma(z^{[l]})$: Activation function
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 83:
+    z_i^{[1]} = w_i^{[1]T} x + b_i^{[1]} \\
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 84:
+    a_i^{[1]} = \sigma(z_i^{[1]})
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 90:
+    z^{[1]} = W^{[1]} x + b^{[1]} \\
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 91:
+    a^{[1]} = \sigma(z^{[1]})
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 96:
+    - $W^{[1]} \in \mathbb{R}^$4 \times 3$$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 97:
+    - $x \in \mathbb{R}^$3 \times 1$$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 98:
+    - $b^{[1]} \in \mathbb{R}^$4 \times 1$$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 103:
+    z^{[2]} = W^{[2]} a^{[1]} + b^{[2]} \\
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 104:
+    a^{[2]} = \hat{y} = \sigma(z^{[2]})
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 109:
+    - $W^{[2]} \in \mathbb{R}^$1 \times 4$$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 110:
+    - $a^{[1]} \in \mathbb{R}^$4 \times 1$$  
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 111:
+    - $b^{[2]} \in \mathbb{R}^$1 \times 1$$
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 119:
+    - $W^{[1]}$: weights for all neurons
+[⚠️ Warning] Potential MDX expression in site/docs/topics/deep-learning/neural-networks/neural-network-forward-pass.md, line 120:
+    - $a^{[1]}$: activations of all neurons

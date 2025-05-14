@@ -2,3 +2,4 @@
 *.lnk
 *.identifier
 .env
+.log

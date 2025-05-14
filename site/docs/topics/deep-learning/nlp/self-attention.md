@@ -37,7 +37,7 @@ Each token gets its own Q, K, and V vectors.
 To compute how much *attention* one word pays to others:
 
 1. Compute dot product between **Q** of the current word and **K** of all words.
-2. Scale the result by the square root of the key dimension $\sqrt{d_k}$.
+2. Scale the result by the square root of the key dimension $\sqrt$d_k$$.
 3. Apply **softmax** to turn scores into weights.
 4. Multiply weights with **V** to get the final contextual embedding.
 
@@ -46,12 +46,12 @@ To compute how much *attention* one word pays to others:
 ### 📐 Full Formula
 
 $$
-\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac$QK^T${\sqrt$d_k$}\right)V
 $$
 
-- $Q \in \mathbb{R}^{n \times d_k}$
-- $K \in \mathbb{R}^{n \times d_k}$
-- $V \in \mathbb{R}^{n \times d_v}$
+- $Q \in \mathbb{R}^$n \times d_k$$
+- $K \in \mathbb{R}^$n \times d_k$$
+- $V \in \mathbb{R}^$n \times d_v$$
 - $n$ = sequence length, $d_k$ = key/query dim, $d_v$ = value dim
 
 The result is a matrix of **contextualized embeddings**: one for each word, now aware of its neighbors.

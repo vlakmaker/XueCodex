@@ -2,7 +2,7 @@ import os
 import re
 
 # Adjust to your markdown directory
-docs_path = './docs'
+docs_path = './site/docs'
 
 # Regex to detect suspicious MDX-style expressions
 mdx_expr_pattern = re.compile(r'{[^}]*}')
