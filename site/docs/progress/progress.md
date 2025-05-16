@@ -40,9 +40,9 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 | Secure API Key Management (Fernet)        | Security          | ✅ Done         | +4 Encryption Mastery   |
 | SQLAlchemy ORM Refactor                   | Backend           | ✅ Done         | +4 DB Alchemy           |
 | Scenario Engine Prototype                 | Gameplay          | 🔜 Next         | +6 Lorecrafter XP       |
-| XueCodex RAG Deployment                   | Project           | 🟡 In Progress  | +6 Retrieval Sage XP    |
+| XueCodex RAG Deployment                   | Project           | ✅ Done  | +6 Retrieval Sage XP    |
 | IBM Course Reboot                         | Learning           | 🟡 In Progress  | +5 Resilience XP        |
-| Publish RAG Milestone Post (LinkedIn/Blog)| Visibility         | 🔜 Next         | +4 Signal Beacon XP     |
+| Publish RAG Milestone Post (LinkedIn/Blog)| Visibility         | ✅ Done         | +4 Signal Beacon XP     |
 | Translate CV (Dutch → English)            | Career             | 🔜 Next         | +3 Multilingual Clarity |
 | Build Your First `n8n` Flow (LLM + Webhook)| Dev Tooling       | 🔜 Optional     | +5 Automation Sorcery   |
 | Add Concept Chain to XueCodex (IBM-related)| Knowledge Base    | 🔜 Next         | +4 Integration XP       |
@@ -137,6 +137,46 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - **Reorganized GitHub workflows** into:
     - `deploy-api.yml`: Handles backend container deployment via Traefik
     - `deploy-docs.yml`: Separately builds and publishes the Docusaurus site to GitHub Pages
+
+### Progress Log — 14 May 2025
+
+### 🎯 Focus Areas
+
+- ✅ Integrated **live semantic search** into XueCodex
+- ✅ Deployed **RAG backend** with FAISS + OpenRouter (Mistral 7B)
+- ✅ Implemented and tested full **RetrievalQA pipeline** via FastAPI
+- ✅ Added `/rag-search` UI entry on the homepage (temporary API key input)
+- ✅ Solved **Docusaurus build bug** caused by a sneaky whitespace in YAML frontmatter
+- ✅ Automated frontmatter + LaTeX cleanup across all docs to prevent future issues
+- ✅ Published new milestone post on **LinkedIn**
+
+### 🔧 Tech Stack Used
+
+- FastAPI, LangChain, FAISS, OpenRouter
+- Docker, Traefik
+- GitHub Actions (split into frontend and backend deploy workflows)
+- Docusaurus 3.7
+
+### 🧠 Key Learnings
+
+- Even one invisible whitespace in YAML can take down an entire build 😅
+- Writing automation scripts (LaTeX cleanup, MDX sanitizer) saved massive debugging time
+- Keeping CI/CD clean with split workflows adds clarity and faster recovery
+- RAG pipelines are powerful and surprisingly approachable when broken down step-by-step
+
+### 🧱 Building Blocks Added to XueCodex
+
+- `/rag-search` UI link on homepage
+- Auto-healing script for LaTeX + frontmatter issues
+- RAG backend now live at: `https://api.xuecodex.tech`
+- LinkedIn post archive: `milestones/2025-05-15-rag-launch.md` (optional future addition)
+
+### 🧪 What's Next?
+
+- Add API key input to the frontend search bar
+- UX polish for search result display
+- Improve chunking and fallback handling in RetrievalQA
+- Begin writing a Knowledge Item: **How RAG Systems Work (End to End)**
 
 ### 🔁 Next Steps:
 
