@@ -29,7 +29,6 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          sidebarId: 'tutorialSidebar', // ✅ Ensures it matches what navbar references
           editUrl: 'https://github.com/vlakmaker/XueCodex/tree/main/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
