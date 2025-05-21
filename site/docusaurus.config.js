@@ -9,7 +9,7 @@ const config = {
 
   url: 'https://xuecodex.tech',
   baseUrl: '/',
-  trailingSlash: false, // or true, but just make it explicit
+  trailingSlash: false,
 
   organizationName: 'vlakmaker',
   projectName: 'XueCodex',
@@ -17,7 +17,6 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
 
   i18n: {
     defaultLocale: 'en',
@@ -30,6 +29,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarId: 'tutorialSidebar', // ✅ Ensures it matches what navbar references
           editUrl: 'https://github.com/vlakmaker/XueCodex/tree/main/',
           remarkPlugins: [require('remark-math')],
           rehypePlugins: [require('rehype-katex')],
