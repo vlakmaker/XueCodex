@@ -1,6 +1,5 @@
 ---
-id: "chapter-2
-"
+id: chapter-2-prediction-and-decision-architecture
 title: "Chapter 2 — Prediction and Decision Architecture"
 tags: [prediction, ai-consulting, decision-systems]
 ---

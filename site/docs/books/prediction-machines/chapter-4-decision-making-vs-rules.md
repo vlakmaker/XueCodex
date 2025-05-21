@@ -1,7 +1,6 @@
 ---
 id: chapter-4-decision-making-vs-rules
 title: "Power and Prediction – Chapter 4: To Decide or Not to Decide"
-sidebar_label: "Ch. 4 – Decision-Making vs Rules"
 tags: [decision-making, rules, cognitive cost, ai-strategy, prediction]
 ---
 

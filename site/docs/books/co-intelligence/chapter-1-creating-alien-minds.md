@@ -57,22 +57,3 @@ Ethan Mollick opens his book *Co-Intelligence* by exploring the evolution of art
 > **Modern AI systems don’t understand like humans do—they *predict*. But prediction is surprisingly powerful when applied at scale with the right architecture.**
 
 What separates GPT-style models from earlier efforts isn't raw processing power alone—it’s **architecture, data, and scale**. The Transformer allowed for a quantum leap in language modeling, enabling machines to simulate aspects of intelligence in ways we didn’t expect so soon.
-
----
-
-## 📌 Tags & Placement
-
-**Primary category**: `books/co-intelligence`  
-**Related topics**:
-- `/nlp/transformers`
-- `/genai/legal-datasets`
-- `/philosophy/ai-personality`
-
----
-
-## 🪄 Suggested Follow-ups
-
-- ✅ Read Chapter 2: *The Shape of the Future*
-- 🔍 Deep dive: [Transformer Architecture Breakdown](/nlp/transformers)
-- 🎙️ Watch: [“Sparks of AGI” Paper Summary](https://arxiv.org/abs/2303.12712)
-- 🧑‍⚖️ Monitor: copyright cases involving AI-generated content
