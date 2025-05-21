@@ -1,7 +1,6 @@
 // src/pages/index.js
-import React from 'react';
-import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Layout from '@theme/Layout';
 
 export default function Home() {
   return (
@@ -56,7 +55,7 @@ export default function Home() {
             <div style={{ marginTop: '1rem' }}>
               <a
                 className="button button--secondary button--lg"
-                href={useBaseUrl('/docs/intro')}
+                href={useBaseUrl('/docs')}
                 style={{ fontWeight: 600 }}
               >
                 🚀 Start Learning
