@@ -112,7 +112,7 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 
 # Log
 
-### 🗓️ Progress Log — 21 May 2025
+### 🗓️ Progress Log — 19 May 2025
 
 ### 🎯 Focus Areas
 
@@ -129,3 +129,54 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 - AIs are **"alien minds"**, but effective prompting helps us align them for co-intelligence — especially when we tell the AI *what kind of mind it should be*.
 - Treating AI like a structured persona boosts clarity and output — but requires careful context-setting.
 - Reading and writing by hand deepens understanding and reflection — it’s a powerful combo when paired with digital consolidation.
+
+### **Progress Log** – May 21, 2025
+
+### ✅ What We Shipped
+
+- **Core Pipeline Running End-to-End**
+    - Fully modular agentic structure: `ManagerAgent`, `ScraperAgent`, `ScorerAgent`, `SummarizerAgent`, `OutputAgent`
+    - `main.py` executes a full job discovery and recommendation flow
+- **🧠 Semantic Job Scoring**
+    - Switched from keyword-based to embedding-based scoring
+    - Integrated `sentence-transformers` with `MiniLM` model
+    - Uses cosine similarity to rank jobs by fit with profile: *“remote AI research, strategy, GenAI, product innovation”*
+- **🔮 LLM-Powered Summarization via OpenRouter**
+    - Created `llm_utils.py` wrapper for OpenRouter (OpenAI-compatible)
+    - SummarizerAgent sends job descriptions and returns 3-bullet summaries:
+        - Role overview
+        - Why it might be a fit (AI/strategy/remote)
+        - Gaps, red flags, or missing info
+- **🔧 Environment Fixes & Debugging**
+    - Solved WSL + Conda + VS Code debug issues
+    - Pin OpenAI SDK to `0.28.1` for compatibility with older `.ChatCompletion.create()` syntax
+    - Nuked all `__pycache__` & `.pyc` conflicts for clean interpreter resolution
+
+---
+
+### 📁 Current Folder Snapshot
+
+```
+bash
+CopyEdit
+BittyScout/
+├── agents/
+│   ├── manager/
+│   ├── scraper/
+│   ├── scorer/
+│   ├── summarizer/
+│   └── output/
+├── utils/llm_utils.py
+├── main.py
+└── .env
+
+```
+
+---
+
+### 💡 Next Steps
+
+- [ ]  Add `MemoryAgent` (de-duplicate previously seen jobs)
+- [ ]  Add real scraping logic for sources like RemoteOK or Wellfound
+- [ ]  Create a CLI or Markdown digest output module
+- [ ]  Dockerize for cloud or cron-based deployment

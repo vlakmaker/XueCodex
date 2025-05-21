@@ -1,7 +1,7 @@
 ---
 id: intro
 title: Welcome to XueCodex
-slug: /intro
+slug: /
 ---
 # 👋 Welcome to XueCodex!
 
