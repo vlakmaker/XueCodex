@@ -1,21 +1,58 @@
+---
+id: "ai-fundamentals-overview"
+title: "AI Fundamentals"
+tags: [ai-fundamentals, overview]
+---
 # 📌 AI Fundamentals
 
-## 🎯 Goal: 
-Understand core AI concepts to make informed product and engineering decisions.
+This section covers the foundational concepts of AI — from what artificial intelligence actually is, to how models learn, to the building blocks that power every AI system you'll encounter.
 
-### **1️⃣ Core AI Concepts**
-- [ ] **What is AI?** (Traditional vs. Modern AI) - [Google AI](https://ai.google/education/)
-- [ ] **Types of AI (Narrow AI, General AI, Super AI)**  - [IBM](https://www.ibm.com/think/topics/artificial-intelligence-types/)
-- [ ] **LLMs & How They Work** (Transformers, Tokenization) - [Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
-- [ ] **Supervised, Unsupervised, Reinforcement Learning** - [DeepLearning.AI](https://www.deeplearning.ai/)
+**Start here if you're new.** Use it as reference once you've moved deeper.
 
-### **2️⃣ AI Ethics & Responsible AI**
-- [ ] **Bias in AI & Fairness** - [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai)
-- [ ] **AI Hallucinations & Risk Mitigation** - [OpenAI Research](https://openai.com/research/)
-- [ ] **AI Regulations (GDPR, AI Act, CCPA)** - [EU AI Act](https://artificialintelligenceact.eu/)
-- [ ] **Explainability & Interpretability** - [DARPA XAI](https://www.darpa.mil/program/explainable-artificial-intelligence)
+---
 
-## 🎯 Hands-on Tasks
-- [ ] Deploy a local AI model (Ollama, Mistral)
-- [ ] Experiment with OpenAI’s API for Prompt Engineering
-- [ ] Compare different LLM models (GPT, Claude, Mistral)
+## 🧭 Recommended Reading Order
+
+### Core Concepts — What is AI?
+1. [What is AI?](./what-is-ai) — The broad field and its techniques
+2. [Types of AI](./types-of-ai) — Narrow, General, and Superintelligence: what exists and what doesn't
+3. [AI vs ML vs Deep Learning](./ai-dl-ml) — How the three relate to each other
+4. [What is Machine Learning?](./what-is-machine-learning) — Types of learning, key concepts, common algorithms
+5. [Generative AI Models](./gen-ai-models) — GANs, VAEs, Diffusion, and Transformer architectures
+
+### How It Works — The Mechanics
+6. [Embeddings](./embeddings) — How AI represents words and concepts as positions in space
+7. [Tokenization](./tokenization) — Breaking text into pieces the model can process
+8. [How Models Actually Learn](./how-models-learn) — The chessboard analogy: forward pass, loss, backpropagation, optimization
+9. [The Training Loop from the Inside](./training-loop) — Step-by-step mechanical walkthrough of a real training cycle
+
+### Data Foundations
+10. [What is Data?](./data) — Types, formats, and terminology
+11. [Data Quality in LLM Training](./data-quality) — Why garbage in = garbage out
+12. [PyTorch DataLoader](./dataloader) — How data gets loaded, batched, and fed to models
+
+### Applications & Context
+13. [AI Across Industries](./ai-across-industries) — Healthcare, finance, education, and more
+
+### Classical AI (Reference)
+14. [Search Problems](./search-problem) — How AI navigates problem spaces
+15. [Search Algorithms](./search-algorithms) — BFS, DFS, A*, Minimax — foundational planning and game AI
+
+---
+
+## 🎯 What You'll Understand After This Section
+
+- What AI, ML, and Deep Learning actually are (and aren't)
+- How models turn text into numbers and learn patterns from data
+- The mechanical training loop: predict → measure → trace → nudge → repeat
+- What embeddings are and why they matter for everything from search to generation
+- How to evaluate whether a model is actually learning
+- Where AI is being applied across industries and why
+
+---
+
+## 🔗 Where to Go Next
+
+- **Deep Learning section** — Neural networks, activation functions, transformers, attention mechanisms
+- **AI Engineering section** — Building production AI systems (Chip Huyen's framework)
+- **Books section** — Chapter-by-chapter notes on key texts
