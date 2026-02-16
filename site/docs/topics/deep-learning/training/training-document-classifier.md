@@ -45,8 +45,6 @@ tags: [deep learning, neural networks, document classifier]
 ### 📌 Formula-wise (simplified):
 
 ```
-pgsql
-CopyEdit
 Cross-Entropy = -log(P(correct class))
 
 ```
@@ -73,8 +71,6 @@ The way we **minimize the loss** is through:
 - Iteratively update parameters to reduce loss:
 
 ```python
-python
-CopyEdit
 θ ← θ - η * ∇Loss
 
 ```

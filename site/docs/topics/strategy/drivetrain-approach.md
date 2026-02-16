@@ -7,7 +7,7 @@ tags: [deep learning, drivetrain approach, ai development]
 
 ## **What Is the Drivetrain Approach?**
 
-The **Drivetrain Approach** is a framework for designing AI-driven systems by focusing on **end goals, levers of control, and data collection**. It was introduced by Google’s Peter Norvig and is widely used in building **AI-powered decision-making systems**.
+The **Drivetrain Approach** is a framework for designing AI-driven systems by focusing on **end goals, levers of control, and data collection**. It was introduced by **Jeremy Howard, Margit Zwemer, and Mike Loukides** in a 2012 O'Reilly article, and later popularized through the fast.ai deep learning courses. It is widely used in building **AI-powered decision-making systems**.
 
 Instead of just training a model and hoping it works, the **Drivetrain Approach** ensures that every part of the AI pipeline is designed to drive real-world impact.
 

@@ -52,7 +52,7 @@ Loss functions, gradients, computation graphs, and why training works.
 | Computing Derivatives with a Computation Graph | ✅ | [Computation Derivatives](../topics/machine-learning/core-maths/computation-derivatives.md) |
 | Broadcasting in Python | ✅ | [Broadcasting](../topics/machine-learning/core-maths/broadcasting-python.md) |
 | The Training Loop from the Ground Up | ✅ | [Training Loop](../topics/ai-fundamentals/training-loop.md) |
-| Loss Functions (dedicated page) | ❌ | — |
+| Loss Functions (MSE, Cross-Entropy) | ✅ | [Loss Functions](../topics/machine-learning/core-maths/loss-functions.md) |
 | Visualizing Functions / Sigmoid Curve | ❌ | — |
 
 **Status:** Mostly covered from course notes. These will become more meaningful after building Karpathy's micrograd. A dedicated loss functions page would strengthen this level.
@@ -131,7 +131,7 @@ Loss functions, gradients, computation graphs, and why training works.
 | Topic | Status | Page |
 |-------|--------|------|
 | What Are Embeddings? (Fundamentals) | ✅ | [Embeddings](../topics/ai-fundamentals/embeddings.md) |
-| Embeddings in NLP | ✅ | [Embeddings NLP](../topics/deep-learning/nlp/embeddings.md) |
+| Embeddings in NLP: Static to Contextual | ✅ | [Embeddings NLP](../topics/deep-learning/nlp/embeddings.md) |
 | Embeddings in Search and RAG | ❌ | — |
 | Embedding Similarity and Distance Metrics | ❌ | — |
 
@@ -166,12 +166,13 @@ These are not content gaps but data quality issues in existing files:
 
 | Issue | File | Detail |
 |-------|------|--------|
-| Typo in id | `deep-learning/nlp/attention-mechanism.md` | id is `attentoin-mechanism` (should be `attention-mechanism`) |
+| ~~Typo in id~~ | ~~`deep-learning/nlp/attention-mechanism.md`~~ | ~~FIXED: id corrected to `attention-mechanism`~~ |
+| ~~Truncated title~~ | ~~`machine-learning/core-maths/computation-graph.md`~~ | ~~FIXED: page fully rewritten~~ |
+| ~~Duplicate id~~ | ~~`deep-learning/nlp/embeddings.md`~~ | ~~FIXED: id changed to `nlp-embeddings`~~ |
+| ~~CopyEdit artifacts~~ | ~~9 files~~ | ~~FIXED: removed from all affected files~~ |
 | Typo in id | `deep-learning/sequence-models/llm-ngram-nn.md` | id is `llm-ngam-nn` (should be `llm-ngram-nn`) |
-| Truncated title | `machine-learning/core-maths/computation-graph.md` | Title ends with "Wor" instead of "Work" |
 | Inconsistent id casing | `ai-fundamentals/superintelligence.md` | id is `Superintelligence` (should be lowercase) |
 | Empty file | `deep-learning/nlp/positional-encoding.md` | No content at all |
-| Duplicate id | `embeddings` used by both `ai-fundamentals/embeddings.md` and `deep-learning/nlp/embeddings.md` |
 | Duplicate id | `chapter-1` used by both `galileo-rag/chapter-1.md` and `prediction-machines/chapter-1.md` |
 | Wrong id on project | `projects/spellweavers-grimoire.md` | id is `prompt-engineering-categories` (copy-paste from another file) |
 | Mismatched title | `deep-learning/training/document-categorization-prediction.md` | Title says "Converting Words to Features in NLP" but content is about document categorization |

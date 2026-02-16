@@ -96,8 +96,6 @@ These are **not** learned — you tune them using validation data.
 - Maps the aggregated vector to output logits (one per category).
 
 ```python
-python
-CopyEdit
 class TextClassificationModel(nn.Module):
     def __init__(self, vocab_size, embed_dim, num_class):
         super().__init__()
@@ -120,8 +118,6 @@ class TextClassificationModel(nn.Module):
 - Apply **argmax** → get predicted class
 
 ```python
-python
-CopyEdit
 output = model(text_tensor, offset_tensor)
 prediction = torch.argmax(output, dim=1)
 

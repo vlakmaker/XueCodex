@@ -38,6 +38,7 @@ Loss functions, gradients, computation graphs, and why training works.
 
 | Topic | Page |
 |-------|------|
+| Loss Functions (MSE, Cross-Entropy) | [Loss Functions](topics/machine-learning/core-maths/loss-functions.md) |
 | Understanding Derivatives | [Derivatives](topics/machine-learning/core-maths/derivatives.md) |
 | Computation Graphs | [Computation Graphs](topics/machine-learning/core-maths/computation-graph.md) |
 | Computing Derivatives with a Computation Graph | [Computation Derivatives](topics/machine-learning/core-maths/computation-derivatives.md) |
@@ -117,7 +118,7 @@ Embeddings show up everywhere — word2vec, transformers, RAG, search.
 | Topic | Page |
 |-------|------|
 | What Are Embeddings? | [Embeddings (Fundamentals)](topics/ai-fundamentals/embeddings.md) |
-| Embeddings in NLP | [Embeddings (NLP)](topics/deep-learning/nlp/embeddings.md) |
+| Embeddings in NLP: Static to Contextual | [Embeddings (NLP)](topics/deep-learning/nlp/embeddings.md) |
 
 ---
 

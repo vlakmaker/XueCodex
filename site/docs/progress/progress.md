@@ -157,8 +157,6 @@ Welcome to **Vera’s Quest Log** — a pixel-powered learning journal chronicli
 ### 📁 Current Folder Snapshot
 
 ```
-bash
-CopyEdit
 BittyScout/
 ├── agents/
 │   ├── manager/

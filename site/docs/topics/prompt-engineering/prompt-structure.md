@@ -56,8 +56,6 @@ Few-shot prompting is a common structuring tactic to demonstrate how the model s
 **Prompt (Math Task):**
 
 ```
-makefile
-CopyEdit
 Q: What’s 2 + 3?
 A: 5
 Q: What’s 10 - 4?
@@ -70,8 +68,6 @@ A:
 **Prompt (Tone Mimicry):**
 
 ```
-vbnet
-CopyEdit
 Customer Message: "I'm super disappointed with the shipping time."
 Response: "We're so sorry to hear that! Let me check the status right away."
 

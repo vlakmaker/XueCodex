@@ -37,8 +37,6 @@ That’s exactly what a **DataLoader** helps you do.
 ### Step 1: Create a Custom Dataset Class
 
 ```python
-python
-CopyEdit
 class CustomDataset(Dataset):
     def __init__(self, sentences):
         self.sentences = sentences
@@ -58,8 +56,6 @@ This class wraps a list of sentences and lets you access items by index — just
 ### Step 2: Load Data Using DataLoader
 
 ```python
-python
-CopyEdit
 data_loader = DataLoader(dataset, batch_size=2, shuffle=True)
 
 ```
@@ -82,8 +78,6 @@ Most NLP models can’t read text — they need **numbers**. So you do the follo
 Example using PyTorch:
 
 ```python
-python
-CopyEdit
 tokenizer = get_tokenizer("basic_english")
 vocab = build_vocab_from_iterator([...])
 padded = pad_sequence([...], batch_first=True, padding_value=0)
@@ -97,8 +91,6 @@ padded = pad_sequence([...], batch_first=True, padding_value=0)
 When you want all these transformations to happen *while loading the batch*, you can use a **collate function**:
 
 ```python
-python
-CopyEdit
 def collate_fn(batch):
     tokenized = [tokenizer(x) for x in batch]
     numericalized = [torch.tensor([vocab[token] for token in tokens]) for tokens in tokenized]
@@ -110,8 +102,6 @@ def collate_fn(batch):
 Then use it in your DataLoader:
 
 ```python
-python
-CopyEdit
 DataLoader(dataset, batch_size=2, shuffle=True, collate_fn=collate_fn)
 
 ```

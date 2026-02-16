@@ -123,8 +123,6 @@ Mode can be `'sum'`, `'mean'`, or `'max'`.
 **Example Code Snippet:**
 
 ```python
-python
-CopyEdit
 embedding = nn.Embedding(num_embeddings=10_000, embedding_dim=100)
 indices = torch.tensor([1, 5, 8])  # e.g., "I like cats"
 output = embedding(indices)
@@ -134,8 +132,6 @@ output = embedding(indices)
 **With EmbeddingBag:**
 
 ```python
-python
-CopyEdit
 embedding_bag = nn.EmbeddingBag(num_embeddings=10_000, embedding_dim=100, mode='mean')
 indices = torch.tensor([1, 5, 8, 2, 3, 6])  # tokens from multiple docs
 offsets = torch.tensor([0, 3])  # starting positions for each doc

@@ -1,11 +1,14 @@
 ---
-id: "attentoin-mechanism"
+id: "attention-mechanism"
 title: "Attention Mechanism — A Gentle but Deep Dive"
-tags: [transformers, nlp, neural networks]
+tags: [transformers, nlp, neural-networks, attention]
 ---
-# 🧠 Attention Mechanism — A Gentle but Deep Dive
+# Attention Mechanism — A Gentle but Deep Dive
 
-## 1️⃣ What Is the Attention Mechanism and Why Is It Important?
+> **Where this fits:** This is a standalone deep dive into the attention mechanism using a translation example.
+> For the full transformer reading path, see: [Transformers Overview](./transformers-attention.md) then [Core Mechanism](./transformer-core-mechanism.md) then [Full Architecture](./transformer-architecture.md).
+
+## What Is the Attention Mechanism and Why Is It Important?
 
 In human conversations, we don’t focus on everything we hear at once. We **attend** to specific words depending on context. Language models inspired by this human ability use the **attention mechanism** to do something similar:
 

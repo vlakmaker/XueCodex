@@ -127,8 +127,6 @@ Neural networks require fixed-size tensors. If your sentences are different leng
 **Example:**
 
 ```python
-python
-CopyEdit
 [
   [1, 2, 3],
   [4, 5]
@@ -139,8 +137,6 @@ CopyEdit
 → Padded:
 
 ```python
-python
-CopyEdit
 [
   [1, 2, 3],
   [4, 5, 0]
@@ -151,8 +147,6 @@ CopyEdit
 **In PyTorch:**
 
 ```python
-python
-CopyEdit
 from torch.nn.utils.rnn import pad_sequence
 
 ```
@@ -174,8 +168,6 @@ Randomly changing the order of your dataset for each epoch.
 **Code example:**
 
 ```python
-python
-CopyEdit
 DataLoader(dataset, shuffle=True)
 
 ```
@@ -195,8 +187,6 @@ It's how the model consumes the data during training.
 **Example:**
 
 ```python
-python
-CopyEdit
 for batch in dataloader:
     model(batch)
 

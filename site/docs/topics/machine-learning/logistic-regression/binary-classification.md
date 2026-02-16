@@ -1,117 +1,154 @@
 ---
 id: "binary-classification"
-title: Binary Classification and Associated Concepts
-tags: [machine-learning, classification, confusion matrix]
+title: "Binary Classification: Yes or No, and How to Measure It"
+tags: [machine-learning, classification, confusion-matrix, evaluation]
 ---
-# Binary Classification and Associated Concepts
 
-## Binary Classification
+# Binary Classification: Yes or No, and How to Measure It
 
-**Binary classification** is a type of machine learning task where the goal is to classify data into one of two distinct categories or classes. The model is trained to predict a label from two possible outcomes, such as:
-- "Yes" or "No"
-- "True" or "False"
-- "1" or "0"
+## What Is Binary Classification?
 
-### Step-by-Step Process:
+Binary classification is the simplest prediction task: given some input, decide between two outcomes. Spam or not spam. Cat or not cat. Fraudulent or legitimate.
 
-1. **Data Collection**: 
-   - You need a dataset where each example (or data point) has a corresponding label that indicates which of the two classes it belongs to.
-   - Example: A dataset of emails with labels indicating whether the email is spam ("1") or not spam ("0").
+It's the task that [logistic regression](./logistic-regression.md) was built for, and it's the building block for understanding all classification problems.
 
-2. **Feature Extraction**:
-   - The features (input variables) are used to predict the label.
-   - Example: In spam email detection, features could include the frequency of certain words, the presence of specific characters, or the sender's email address.
-
-3. **Model Training**:
-   - Use a machine learning algorithm to learn the relationship between features and labels. Common algorithms used for binary classification include:
-     - **Logistic Regression**: A statistical model that estimates the probability that a given input belongs to a particular class.
-     - **Support Vector Machine (SVM)**: Finds a hyperplane that separates the data points of one class from another.
-     - **Decision Trees**: A tree-like structure that splits the data into smaller subsets based on feature values.
-     - **Random Forests**: An ensemble of decision trees, where the final prediction is based on the majority vote of all trees.
-
-4. **Prediction**:
-   - Once the model is trained, it can predict the class of new, unseen data points.
-   - Example: In logistic regression, the model outputs a probability score (between 0 and 1) indicating how likely the input is to belong to the positive class. If the probability is greater than 0.5, it predicts the positive class ("1"), otherwise, it predicts the negative class ("0").
-
-5. **Evaluation**:
-   - The model's performance is measured using metrics like:
-     - **Accuracy**: The proportion of correct predictions out of all predictions.
-     - **Precision**: The proportion of true positives among all positive predictions.
-     - **Recall (Sensitivity)**: The proportion of true positives among all actual positives.
-     - **F1 Score**: The harmonic mean of precision and recall, used to balance both.
-   
-6. **Threshold Adjustment**:
-   - You can adjust the decision threshold (e.g., changing from 0.5 to another value) to fine-tune the trade-off between precision and recall.
+The model outputs a probability between 0 and 1. You pick a threshold (usually 0.5) — above it, predict the positive class; below it, predict the negative class.
 
 ---
 
-## Binary Classification Confusion Matrix
+## How It Works
 
-A **confusion matrix** is a tool used to evaluate the performance of a binary classification model. It compares predicted labels to actual labels and consists of four key components:
+1. **Input features ($X$)** — the data you're using to make the prediction (email word counts, pixel values, patient vitals)
+2. **Model** — takes the features and produces a probability (logistic regression, neural network, decision tree)
+3. **Threshold** — converts probability into a decision (if $\hat{y} > 0.5$, predict positive)
+4. **Evaluation** — compare predictions against true labels to measure how well the model works
 
-### Components:
-1. **True Positives (TP)**: Correctly predicted positive cases.
-2. **True Negatives (TN)**: Correctly predicted negative cases.
-3. **False Positives (FP)**: Incorrectly predicted positive cases.
-4. **False Negatives (FN)**: Incorrectly predicted negative cases.
-
-### Confusion Matrix Layout:
-
-|                      | Predicted Positive (1) | Predicted Negative (0) |
-|----------------------|------------------------|------------------------|
-| **Actual Positive (1)**  | True Positives (TP)     | False Negatives (FN)    |
-| **Actual Negative (0)**  | False Positives (FP)    | True Negatives (TN)     |
-
-### Key Metrics from the Confusion Matrix:
-- **Accuracy**: Proportion of all correct predictions (TP + TN) out of all predictions.
-- **Precision**: Proportion of true positives out of all predicted positives.
-- **Recall (Sensitivity)**: Proportion of true positives out of all actual positives.
-- **F1 Score**: Harmonic mean of precision and recall.
-- **Specificity**: Proportion of true negatives out of all actual negatives.
+The interesting part isn't the prediction — it's measuring how well the model predicts. That's where most people get confused.
 
 ---
 
-## X Column and y Column in Machine Learning
+## The Confusion Matrix
 
-In machine learning, **X** and **y** represent the **features** (inputs) and **labels** (outputs) of the dataset, respectively.
+A confusion matrix compares what the model predicted against what was actually true. Four possible outcomes:
 
-### X Column (Features or Input Data):
-- Represents the **independent variables** or features.
-- Each row in **X** contains input data for one sample.
-- Example (for house price prediction):
+```
+                    Predicted
+                 Positive  Negative
+Actual Positive |   TP    |   FN    |
+Actual Negative |   FP    |   TN    |
+```
 
-| Size (sqft) | Rooms | Location |
-|-------------|-------|----------|
-| 1000        | 3     | A        |
-| 1500        | 4     | B        |
-| 800         | 2     | A        |
+| Outcome | Name | Plain English |
+|---------|------|---------------|
+| TP (True Positive) | Hit | Model said yes, and it was right |
+| TN (True Negative) | Correct rejection | Model said no, and it was right |
+| FP (False Positive) | False alarm | Model said yes, but it was wrong |
+| FN (False Negative) | Miss | Model said no, but it was wrong |
 
-### y Column (Labels or Target Data):
-- Represents the **dependent variable** or the label that the model is trying to predict.
-- Example (for house price prediction):
+### Example: Spam Detection
 
-| Price ($) |
-|-----------|
-| 200,000   |
-| 300,000   |
-| 150,000   |
+Your model classifies 100 emails:
 
-### How It Works:
-1. **Input the X columns** (features) into the model.
-2. The model learns the relationship between **X** and **y** from the training data.
-3. After training, when new data (**X**) is provided, the model predicts the corresponding **y** values.
+```
+                    Predicted
+                  Spam    Not Spam
+Actual Spam    |   40    |   10    |   (50 actual spam)
+Actual Not Spam|    5    |   45    |   (50 actual not-spam)
+```
 
-### Example Code (Python with scikit-learn):
+- 40 spam emails correctly caught (TP)
+- 45 legitimate emails correctly passed through (TN)
+- 5 legitimate emails wrongly marked as spam (FP) — annoying
+- 10 spam emails that slipped through (FN) — also bad
+
+---
+
+## Metrics: What "Good" Means Depends on the Problem
+
+### Accuracy
+
+$$
+\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+$$
+
+From the spam example: $(40 + 45) / 100 = 85\%$
+
+Accuracy is intuitive but **misleading when classes are imbalanced**. If 99% of emails aren't spam, a model that always says "not spam" gets 99% accuracy while catching zero spam. Useless.
+
+### Precision
+
+$$
+\text{Precision} = \frac{TP}{TP + FP}
+$$
+
+"Of everything the model flagged as positive, how many were actually positive?"
+
+From the spam example: $40 / (40 + 5) = 88.9\%$
+
+**High precision matters when false positives are costly.** If your spam filter sends important client emails to spam (FP), that's a serious problem. You want precision to be high.
+
+### Recall (Sensitivity)
+
+$$
+\text{Recall} = \frac{TP}{TP + FN}
+$$
+
+"Of everything that was actually positive, how many did the model catch?"
+
+From the spam example: $40 / (40 + 10) = 80\%$
+
+**High recall matters when false negatives are costly.** In medical diagnosis, missing a disease (FN) can be life-threatening. You want recall to be high even if it means more false alarms.
+
+### F1 Score
+
+$$
+F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+$$
+
+The harmonic mean of precision and recall. It balances both. Use it when you care about both false positives and false negatives roughly equally.
+
+From the spam example: $2 \cdot (0.889 \cdot 0.80) / (0.889 + 0.80) = 84.2\%$
+
+---
+
+## The Precision-Recall Trade-Off
+
+You can adjust the decision threshold to shift between precision and recall:
+
+| Threshold | Effect | Precision | Recall |
+|-----------|--------|-----------|--------|
+| High (0.9) | Model only predicts positive when very confident | Higher | Lower |
+| Default (0.5) | Balanced | Moderate | Moderate |
+| Low (0.1) | Model predicts positive aggressively | Lower | Higher |
+
+There's no free lunch. Increasing one usually decreases the other. The right threshold depends on the cost of each type of error in your specific problem.
+
+---
+
+## Features ($X$) and Labels ($y$)
+
+In code, the data is split into:
+
+- **$X$** — the feature matrix (inputs). Each row is one sample, each column is one feature.
+- **$y$** — the label vector (outputs). Each entry is 0 or 1.
 
 ```python
 from sklearn.model_selection import train_test_split
 
-# X = features, y = target variable
-X = data[['Size', 'Rooms', 'Location']]
-y = data['Price']
+# X = features, y = labels
+X = data[['word_count', 'has_link', 'sender_reputation']]
+y = data['is_spam']  # 0 or 1
 
-# Splitting into training and testing datasets
+# Split into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+```
 
-X_train and y_train are used to train the model.
-X_test and y_test are used to evaluate the model's performance.
+The model learns the relationship between $X$ and $y$ from the training set, then you evaluate it on the test set to see if it generalizes.
+
+---
+
+## Where to Go Next
+
+- [Logistic Regression](./logistic-regression.md) — the simplest binary classification model
+- [Logistic Regression Cost Function](./logistic-regression-cost-function.md) — the loss function that trains it
+- [Loss Functions](../../machine-learning/core-maths/loss-functions.md) — why cross-entropy is used for classification

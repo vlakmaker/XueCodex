@@ -1,9 +1,12 @@
 ---
 id: "self-attention"
 title: "What Is Self-Attention?"
-tags: [transformers, nlp, neural networks]
+tags: [transformers, nlp, neural-networks, attention]
 ---
-# 🔍 What Is Self-Attention?
+# What Is Self-Attention?
+
+> **Where this fits:** This is a focused reference page on the self-attention mechanism.
+> For the full transformer reading path, see: [Transformers Overview](./transformers-attention.md) then [Core Mechanism](./transformer-core-mechanism.md) then [Full Architecture](./transformer-architecture.md).
 
 Self-attention allows a model to look at **all the other words in a sentence** (or a document, or code...) and **decide how important each of them is** for understanding a particular word.
 
@@ -124,10 +127,18 @@ Steps:
 
 ---
 
-## 🤓 Summary
+## Summary
 
 Self-attention lets a model:
 - Compare all tokens with all others via dot product
 - Learn long-range dependencies
 - Replace sequential memory with direct *contextual lookup*
 - Power the core of the Transformer architecture
+
+---
+
+## Where to Go Next
+
+- [Transformer Core Mechanism](./transformer-core-mechanism.md) — deeper treatment of Q/K/V, multi-head attention, and positional encoding
+- [Attention Mechanism](./attention-mechanism.md) — a worked translation example showing attention step by step
+- [Transformer Architecture](./transformer-architecture.md) — the full pipeline from input to output

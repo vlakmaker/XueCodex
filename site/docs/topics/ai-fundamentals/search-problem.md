@@ -47,8 +47,6 @@ Each **node** in the search process stores:
 **Algorithm:**
 
 ```
-sql
-CopyEdit
 1. Initialize frontier with the initial state.
 2. Loop:
    a. If frontier is empty → no solution.
@@ -73,8 +71,6 @@ Adds an **explored set** to avoid revisiting:
 **Improved Algorithm:**
 
 ```
-sql
-CopyEdit
 1. Frontier ← initial state
 2. Explored ← empty set
 3. Loop:

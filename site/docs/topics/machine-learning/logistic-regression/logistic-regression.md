@@ -79,9 +79,9 @@ The sigmoid function works by:
 
 ## Logistic Regression in Deep Learning
 
-- Logistic regression is often used as the **output layer** of a neural network when you're dealing with binary classification problems.
-  - For example, in a deep neural network, the final layer might use logistic regression to predict whether an image contains a cat or not (binary outcome).
-  - The **sigmoid function** is also used in neural networks for binary classification tasks, so logistic regression's math (the sigmoid function) fits perfectly into this architecture.
+- The **sigmoid activation function** — the same function at the heart of logistic regression — is commonly used in the **output layer** of a neural network for binary classification problems.
+  - For example, in a deep neural network, the final layer might apply sigmoid to produce a probability of whether an image contains a cat or not.
+  - This is why logistic regression is sometimes called "a single neuron" — it's the same math (weighted sum + sigmoid), just without hidden layers. A neural network with one output neuron and no hidden layers *is* logistic regression.
 
 ---
 

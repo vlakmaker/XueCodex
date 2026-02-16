@@ -68,7 +68,7 @@ A **feedback loop** occurs when an ML model's predictions influence future train
 If a news recommendation system notices a user clicks on extreme political content, it may keep showing more extreme content, reinforcing radicalization (positive feedback loop).
 
 **Example: Spam Detection System**  
-If a spam filter mislabels certain legitimate emails as spam and removes them from the inbox, it may never learn to classify them correctly (negative feedback loop).
+If a spam filter mislabels certain legitimate emails as spam and removes them from the inbox, it may never learn to classify them correctly. This is actually a **positive feedback loop** (self-reinforcing error) — the model's mistake removes the corrective data it would need, making the same mistake more likely in the future.
 
 ---
 

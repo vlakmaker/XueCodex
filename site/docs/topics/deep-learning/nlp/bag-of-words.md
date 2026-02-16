@@ -48,10 +48,7 @@ Now we need a predefined list of all the words we care about — this is our **v
 Imagine it looks like this:
 
 ```
-css
-CopyEdit
 ["that", "is", "a", "cute", "dog", "my", "cat"]
-
 ```
 
 Each word in the vocabulary has a fixed position — this is important because our vector will match this order.
